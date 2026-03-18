@@ -139,3 +139,37 @@ DEPLOY: Ready (28s) - https://customwoodquote-zbdyw92qk-brandon-7928s-projects.v
 - **Organization logo**: Added `logo: ImageObject` to Organization schema in root layout — improves Knowledge Panel eligibility
 - **Deployed**: Vercel Ready in 28s — pushed to origin
 [2026-03-18 01:47:00] Run #4 finished
+✅ **Completed**
+- **Calculator duplicate nav fixed**: Removed embedded `<header>` and `<footer>` from `CalculatorClient.tsx` — /calculator was rendering two navbars and two footers inside `<main>`, producing invalid HTML and confusing crawlers (same bug fixed on /pricing-guide in Run #3)
+- **FAQPage schema**: Added 5-question JSON-LD to /calculator targeting "what is a board foot", "how to calculate board feet", "board feet for a dining table", "most expensive wood for furniture" — eligible for FAQ rich snippets in Google SERPs
+- **Wood species pricing table**: 12 species sorted by price with per board-foot costs, common furniture uses, and tier badges (Premium/Mid-range/Budget) — targets long-tail queries like "walnut price per board foot", "white oak cost per board foot"
+- **Internal link**: Calculator educational section now links to /pricing-guide with anchor text "custom furniture pricing guide"
+- **Organization logo**: Added `logo: ImageObject` to Organization schema in root layout — improves Knowledge Panel eligibility
+- **Deployed**: Vercel Ready in 28s — pushed to origin
+[2026-03-17 18:47:15] Run #4 finished
+[2026-03-17 18:47:20] Run #5 starting (model: sonnet)
+
+[2026-03-18] FAQPage Schemas + Internal Links - customwoodquote.com (CraftQuote)
+
+ISSUES FOUND:
+- Homepage had no FAQPage schema and no FAQ section, missing rich snippet opportunity for branded and pre-purchase queries
+- /pricing-guide had HowTo schema but no FAQPage schema and no FAQ section, missing rich snippets for "how much to charge for X" queries
+- Homepage had no contextual in-body links to /pricing-guide or /help, limiting crawl depth signaling and internal authority distribution
+- Table of Contents on /pricing-guide had no entry for FAQ section
+
+CHANGES MADE:
+1. page.tsx: Added HOME_FAQS const (6 questions), FAQPage JSON-LD schema, FAQ section between Features and Quote Builder, internal link to /help in FAQ section, contextual link to /pricing-guide in "50+ Wood Species" feature card
+2. pricing-guide/page.tsx: Added pricingFaqSchema const (5 questions targeting "how much to charge for X" queries), FAQPage JSON-LD script tag, FAQ section before Calculator CTA, Table of Contents entry for FAQ section
+
+BUILD: Passed - all pages compile as static correctly
+DEPLOY: Ready (23s) - https://customwoodquote-bp0nnj7ll-brandon-7928s-projects.vercel.app
+
+✅ **Completed**
+- **Homepage FAQPage schema**: 6-question JSON-LD targeting "is CraftQuote free", "what types of furniture", "do I need an account", "how does AI photo analysis work", "can I use my own prices", "how long does it take" — eligible for FAQ rich snippets on branded and generic SaaS queries
+- **Homepage FAQ section**: Rendered FAQ accordion between Features and Quote Builder with link to /help for deeper engagement
+- **Homepage internal link**: "50+ Wood Species" feature card now links to /pricing-guide with anchor text "See the pricing guide" — distributes authority to the pricing content page
+- **Pricing guide FAQPage schema**: 5-question JSON-LD targeting "how much for a dining table", "fair shop rate", "waste factor calculation", "profit margin target", "hours to build a table" — eligible for FAQ rich snippets on high-value transactional-informational queries
+- **Pricing guide FAQ section**: "Common Pricing Questions" section added before Calculator CTA, dynamically rendered from schema data
+- **Table of Contents updated**: FAQ entry added to pricing guide navigation
+- **Deployed**: Vercel Ready in 23s — pushed to origin
+[2026-03-18 01:52:55] Run #5 finished
