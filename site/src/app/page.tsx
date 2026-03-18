@@ -26,6 +26,67 @@ export const metadata: Metadata = {
   },
 };
 
+const HOW_IT_WORKS = [
+  {
+    step: 1,
+    title: "Upload a Photo",
+    description: "Upload 1 to 3 reference photos of the furniture piece you need to quote.",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+      </svg>
+    ),
+  },
+  {
+    step: 2,
+    title: "AI Identifies the Piece",
+    description: "AI detects furniture type, style, complexity, joinery, and component count automatically.",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+      </svg>
+    ),
+  },
+  {
+    step: 3,
+    title: "Refine the Details",
+    description: "Confirm AI suggestions, enter exact dimensions, and select your wood species and finish.",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+      </svg>
+    ),
+  },
+  {
+    step: 4,
+    title: "Review Your Pricing",
+    description: "See a full breakdown of materials, labor, overhead, and margin before sending anything.",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+      </svg>
+    ),
+  },
+  {
+    step: 5,
+    title: "Send a Pro Quote",
+    description: "Generate a branded PDF or shareable link your customer can accept or decline online.",
+    icon: (
+      <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+      </svg>
+    ),
+  },
+];
+
+const TRUST_BADGES = [
+  { label: "50+ Wood Species" },
+  { label: "100% Free" },
+  { label: "No Account Required" },
+  { label: "AI-Powered Analysis" },
+  { label: "PDF + Share Link" },
+];
+
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -45,6 +106,40 @@ export default function Home() {
             >
               Start Building a Quote
             </a>
+          </div>
+          {/* Trust badges */}
+          <div className="mt-8 flex flex-wrap justify-center gap-2">
+            {TRUST_BADGES.map((badge) => (
+              <span
+                key={badge.label}
+                className="inline-flex items-center rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-800 ring-1 ring-inset ring-amber-200"
+              >
+                {badge.label}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="bg-white border-y border-gray-100 px-6 py-14 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="text-center text-sm font-semibold uppercase tracking-widest text-amber-600 mb-10">
+            How It Works
+          </h2>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
+            {HOW_IT_WORKS.map((item) => (
+              <div key={item.step} className="flex flex-col items-center text-center">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-amber-100 text-amber-700 mb-4">
+                  {item.icon}
+                </div>
+                <div className="text-xs font-bold uppercase tracking-wider text-amber-500 mb-1">
+                  Step {item.step}
+                </div>
+                <div className="text-sm font-semibold text-gray-900 mb-1">{item.title}</div>
+                <div className="text-xs text-gray-500 leading-relaxed">{item.description}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
