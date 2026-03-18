@@ -57,9 +57,11 @@ Spawn a **general-purpose** agent (`model="sonnet"`) with this exact prompt (sub
 > 4. Use all assets from `/Users/brandonhopkins/Projects/CLIENT_NAME/assets/`
 > 5. Run `npm install` then `npm run build`. Fix all errors before continuing.
 > 6. Initialize a git repo at the project root `/Users/brandonhopkins/Projects/CLIENT_NAME/` (not inside site/). Add a `.gitignore` that excludes `site/node_modules`. Commit all files.
-> 7. Create a GitHub repo named `CLIENT_NAME` using the `gh` CLI and push: `gh repo create CLIENT_NAME --public --source=. --remote=origin --push`
-> 8. Deploy from inside the site subfolder: `cd /Users/brandonhopkins/Projects/CLIENT_NAME/site && npx vercel --yes --prod --name CLIENT_NAME`
-> 9. Return exactly: `BUILD_COMPLETE [vercel-url]`
+> 7. Create a GitHub repo named `CLIENT_NAME` under the `CalTech-Web` org and push: `gh repo create CalTech-Web/CLIENT_NAME --public --source=. --remote=origin --push`
+> 8. Deploy from the project root with the root directory set to `site`: `cd /Users/brandonhopkins/Projects/CLIENT_NAME && npx vercel --yes --prod --name CLIENT_NAME`
+> 9. After the first deploy, set the Vercel Root Directory to `site` so that GitHub auto-deploys work correctly. Get the Vercel auth token from `~/Library/Application Support/com.vercel.cli/auth.json`, read the project ID from `.vercel/project.json`, then run: `curl -s -X PATCH "https://api.vercel.com/v9/projects/PROJECT_ID" -H "Authorization: Bearer TOKEN" -H "Content-Type: application/json" -d '{"rootDirectory":"site"}'`
+> 10. Trigger one more deploy to confirm the root directory setting works: `cd /Users/brandonhopkins/Projects/CLIENT_NAME && npx vercel --yes --prod`
+> 11. Return exactly: `BUILD_COMPLETE [vercel-url]`
 
 **Do not proceed to Step 4 until the agent returns `BUILD_COMPLETE` and a Vercel URL.**
 
@@ -114,7 +116,7 @@ Spawn a **visual-auditor** agent (`model="sonnet"`) with this prompt (substitute
 Read `/tmp/CLIENT_NAME-audit.md`. Spawn a **general-purpose** agent (`model="sonnet"`) with this exact prompt (substitute CLIENT_NAME and paste the audit contents):
 
 > Your only job is to fix every issue listed below. Make each fix in the codebase at `/Users/brandonhopkins/Projects/CLIENT_NAME/site/`. After all fixes are made, commit, push, and deploy:
-> `cd /Users/brandonhopkins/Projects/CLIENT_NAME/site && npx vercel --yes --prod --name CLIENT_NAME`
+> `cd /Users/brandonhopkins/Projects/CLIENT_NAME && npx vercel --yes --prod`
 >
 > [paste full contents of /tmp/CLIENT_NAME-audit.md here]
 >
@@ -143,7 +145,7 @@ Spawn a **general-purpose** agent (`model="sonnet"`) with this exact prompt (sub
 > - Footer contains a "Powered by Caltechweb" link pointing to `https://caltechweb.com`
 >
 > Fix any issues found. Then do a final deploy:
-> `cd /Users/brandonhopkins/Projects/CLIENT_NAME/site && npx vercel --yes --prod --name CLIENT_NAME`
+> `cd /Users/brandonhopkins/Projects/CLIENT_NAME && npx vercel --yes --prod`
 >
 > Return exactly: `LAUNCH_READY [final-vercel-url]`
 

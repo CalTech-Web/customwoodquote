@@ -1,2 +1,12 @@
+site/node_modules
+site/.next
+site/.env.local
+site/.env*.local
+prisma/dev.db
+prisma/dev.db-journal
+site/generated/
+site/uploads/
+output/
 .DS_Store
+**/.DS_Store
 .playwright-mcp/

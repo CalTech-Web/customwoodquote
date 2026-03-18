@@ -1,0 +1,16 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://customwoodquote.com/sitemap.xml
+
+# Disallow admin and API routes (if applicable)
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /settings/
+Disallow: /projects/
+Disallow: /quotes/
