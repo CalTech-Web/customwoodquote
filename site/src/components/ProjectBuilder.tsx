@@ -848,7 +848,7 @@ function Step3Materials({
       {/* Unassigned warning */}
       {unassignedCount > 0 && (
         <div className="bg-yellow-50 border border-yellow-300 rounded-lg px-4 py-3 text-sm text-yellow-800">
-          {unassignedCount} component{unassignedCount > 1 ? 's' : ''} without a species assigned — {unassignedCount > 1 ? 'they' : 'it'} will contribute $0 to the lumber cost.
+          {unassignedCount} component{unassignedCount > 1 ? 's' : ''} without a species assigned, and {unassignedCount > 1 ? 'they' : 'it'} will contribute $0 to the lumber cost.
         </div>
       )}
 
