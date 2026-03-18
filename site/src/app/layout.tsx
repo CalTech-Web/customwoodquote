@@ -51,6 +51,10 @@ export default function RootLayout({
                 "name": "CraftQuote",
                 "url": "https://customwoodquote.com",
                 "description": "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations. Free with no account required.",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://customwoodquote.com/og-image.jpg",
+                },
               },
               {
                 "@context": "https://schema.org",
