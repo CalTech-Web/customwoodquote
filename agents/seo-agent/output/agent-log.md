@@ -25,3 +25,44 @@ CHANGES MADE:
 6. noindex layouts: Added layout.tsx with robots noindex/nofollow to dashboard, settings, onboarding, projects, login, signup directories
 
 BUILD: Passed - all pages compile as static/dynamic correctly
+✅ **Completed**
+- **Root layout fixed**: Extracted `NavBar` to a client component, converted `layout.tsx` to a server component with `metadataBase: https://customwoodquote.com` and a title template (`%s | CraftQuote`) — this was blocking all OG image URLs and canonical resolution
+- **Calculator page**: Split into `CalculatorClient.tsx` (client) + server `page.tsx` that now properly exports metadata — the existing `metadata.ts` file was wired up and expanded
+- **Help page**: Same server/client split, added metadata targeting woodworking FAQ queries, plus **FAQPage JSON-LD schema** for 8 questions (rich snippet eligibility in Google)
+- **Sitemap**: Created `sitemap.ts` covering `/`, `/calculator`, `/pricing-guide`, `/help` with appropriate priorities
+- **Robots**: Created `robots.ts` disallowing `/dashboard`, `/settings`, `/projects/`, `/onboarding`, `/api/` — directs crawl budget to content pages only
+- **Noindex layouts**: Added `layout.tsx` files to `dashboard`, `settings`, `onboarding`, `projects`, `login`, `signup` — these app-only routes no longer consume crawl budget
+- **Deployed**: Production build passed, deployed to Vercel (Ready in 25s)
+[2026-03-17 18:27:05] Run #1 finished
+[2026-03-17 18:27:10] Run #2 starting (model: sonnet)
+
+[2026-03-17] Structured Data + Canonical URLs - customwoodquote.com (CraftQuote)
+
+ISSUES FOUND:
+- No canonical URLs on any content page (/, /calculator, /pricing-guide, /help)
+- No site-wide Organization or WebSite schema
+- Homepage SoftwareApplication schema lacked featureList
+- No HowTo schema on homepage despite clear 5-step workflow
+- No structured data on /pricing-guide despite being a "how to price" instructional guide
+- No structured data on /calculator despite being a standalone web tool
+
+CHANGES MADE:
+1. page.tsx: Added alternates.canonical, enhanced SoftwareApplication schema with featureList (8 features), added HowTo schema for 5-step quoting workflow
+2. calculator/page.tsx: Added alternates.canonical, added WebApplication JSON-LD with featureList and free offer
+3. pricing-guide/page.tsx: Added alternates.canonical, added HowTo JSON-LD (5 steps: materials, shop rate, labor, overhead, margin)
+4. help/page.tsx: Added alternates.canonical (FAQ schema already present from Run #1)
+5. layout.tsx: Added Organization + WebSite JSON-LD schemas (site-wide, rendered in all pages)
+
+BUILD: Passed - all pages compile as static correctly
+DEPLOY: Ready (21s) - https://customwoodquote-1ytx2i4ht-brandon-7928s-projects.vercel.app
+
+✅ **Completed**
+- **Canonical URLs**: All 4 content pages now declare explicit canonical URLs via alternates.canonical
+- **Organization schema**: Site-wide schema added to root layout declaring CraftQuote as the publisher
+- **WebSite schema**: Site-wide schema added to root layout for search engine site identity
+- **HowTo schema (homepage)**: 5-step quoting workflow marked up with HowTo JSON-LD (rich snippet eligibility)
+- **SoftwareApplication schema**: Enhanced with featureList (8 features) for richer knowledge panel data
+- **HowTo schema (pricing guide)**: Complete 5-step pricing methodology marked up (material costs, shop rate, labor, overhead, profit margin)
+- **WebApplication schema (calculator)**: Board foot calculator marked up as free WebApplication with featureList
+- **Deployed**: Production build passed, deployed to Vercel (Ready in 21s)
+[2026-03-17 18:45:00] Run #2 finished
