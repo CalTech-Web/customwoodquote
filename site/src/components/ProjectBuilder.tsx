@@ -335,7 +335,7 @@ function Step1PhotoUpload({
       )}
 
       {aiAnalysis && (
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 space-y-4">
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 space-y-4">
           <h3 className="font-semibold text-lg">AI Analysis Results</h3>
 
           <div>
@@ -400,7 +400,7 @@ function Step1PhotoUpload({
       <button
         onClick={onNext}
         disabled={uploadedKeys.length === 0 || isAnalyzing}
-        className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
+        className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 disabled:bg-gray-300 disabled:cursor-not-allowed"
       >
         {isAnalyzing ? 'Analyzing...' : 'Next: Dimensions'}
       </button>
@@ -494,8 +494,8 @@ function Step2Dimensions({
         )}
 
         {aiAnalysis && (
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 space-y-3">
-            <h3 className="font-semibold text-sm text-blue-800">AI Analysis</h3>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 space-y-3">
+            <h3 className="font-semibold text-sm text-amber-800">AI Analysis</h3>
             <div className="grid grid-cols-2 gap-2 text-sm">
               <div>
                 <span className="text-gray-500">Type</span>
@@ -532,7 +532,7 @@ function Step2Dimensions({
             onClick={() => setDimensions({ ...dimensions, unit: 'inches' })}
             className={`px-4 py-2 rounded text-sm ${
               dimensions.unit === 'inches'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-amber-600 text-white'
                 : 'bg-gray-200 text-gray-700'
             }`}
           >
@@ -542,7 +542,7 @@ function Step2Dimensions({
             onClick={() => setDimensions({ ...dimensions, unit: 'cm' })}
             className={`px-4 py-2 rounded text-sm ${
               dimensions.unit === 'cm'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-amber-600 text-white'
                 : 'bg-gray-200 text-gray-700'
             }`}
           >
@@ -602,7 +602,7 @@ function Step2Dimensions({
           <h3 className="text-sm font-semibold text-gray-700">Cut List</h3>
           <button
             onClick={handleRegenerate}
-            className="text-sm text-blue-600 hover:text-blue-800 font-medium"
+            className="text-sm text-amber-600 hover:text-amber-800 font-medium"
           >
             Regenerate from dimensions
           </button>
@@ -635,7 +635,7 @@ function Step2Dimensions({
                         type="text"
                         value={item.name}
                         onChange={e => updateItem(item.id, 'name', e.target.value)}
-                        className="w-full px-2 py-1 border border-gray-200 rounded text-sm bg-transparent focus:bg-white focus:border-blue-400 outline-none"
+                        className="w-full px-2 py-1 border border-gray-200 rounded text-sm bg-transparent focus:bg-white focus:border-amber-400 outline-none"
                       />
                       {item.notes && (
                         <span className="text-xs text-gray-400 pl-2">{item.notes}</span>
@@ -646,7 +646,7 @@ function Step2Dimensions({
                         type="number"
                         value={item.qty}
                         onChange={e => updateItem(item.id, 'qty', parseInt(e.target.value) || 0)}
-                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-blue-400 outline-none"
+                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-amber-400 outline-none"
                         min={1}
                       />
                     </td>
@@ -655,7 +655,7 @@ function Step2Dimensions({
                         type="number"
                         value={item.lengthIn}
                         onChange={e => updateItem(item.id, 'lengthIn', parseFloat(e.target.value) || 0)}
-                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-blue-400 outline-none"
+                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-amber-400 outline-none"
                         step="0.1"
                       />
                     </td>
@@ -664,7 +664,7 @@ function Step2Dimensions({
                         type="number"
                         value={item.widthIn}
                         onChange={e => updateItem(item.id, 'widthIn', parseFloat(e.target.value) || 0)}
-                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-blue-400 outline-none"
+                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-amber-400 outline-none"
                         step="0.1"
                       />
                     </td>
@@ -673,7 +673,7 @@ function Step2Dimensions({
                         type="number"
                         value={item.thicknessIn}
                         onChange={e => updateItem(item.id, 'thicknessIn', parseFloat(e.target.value) || 0)}
-                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-blue-400 outline-none"
+                        className="w-full px-1 py-1 border border-gray-200 rounded text-sm text-center bg-transparent focus:bg-white focus:border-amber-400 outline-none"
                         step="0.125"
                       />
                     </td>
@@ -698,7 +698,7 @@ function Step2Dimensions({
 
         <button
           onClick={addItem}
-          className="mt-2 text-sm text-blue-600 hover:text-blue-800 font-medium"
+          className="mt-2 text-sm text-amber-600 hover:text-amber-800 font-medium"
         >
           + Add component
         </button>
@@ -726,7 +726,7 @@ function Step2Dimensions({
         </div>
         <div className="flex justify-between items-center border-t border-gray-300 pt-3">
           <span className="text-sm font-semibold">Total (with waste)</span>
-          <span className="text-2xl font-bold text-blue-600">
+          <span className="text-2xl font-bold text-amber-600">
             {totalWithWaste.toFixed(2)} bf
           </span>
         </div>
@@ -742,7 +742,7 @@ function Step2Dimensions({
         <button
           onClick={onNext}
           disabled={!dimensions.length || !dimensions.width || !dimensions.height}
-          className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed min-h-[44px]"
+          className="flex-1 bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 disabled:bg-gray-300 disabled:cursor-not-allowed min-h-[44px]"
         >
           Next: Materials
         </button>
@@ -817,8 +817,8 @@ function Step3Materials({
       <h2 className="text-2xl font-bold">Step 3: Materials</h2>
 
       {/* A. Quick Assign bar */}
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-        <label className="block text-sm font-medium text-blue-800 mb-2">Quick Assign All Components</label>
+      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+        <label className="block text-sm font-medium text-amber-800 mb-2">Quick Assign All Components</label>
         <div className="flex gap-2">
           <select
             value={quickAssignId}
@@ -835,7 +835,7 @@ function Step3Materials({
           <button
             onClick={handleQuickAssign}
             disabled={!quickAssignId}
-            className="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed whitespace-nowrap"
+            className="px-4 py-2 bg-amber-600 text-white rounded-md text-sm font-medium hover:bg-amber-700 disabled:bg-gray-300 disabled:cursor-not-allowed whitespace-nowrap"
           >
             Apply to All
           </button>
@@ -919,7 +919,7 @@ function Step3Materials({
         </div>
         <div className="flex justify-between border-t border-gray-300 pt-2">
           <span className="text-sm font-semibold">Lumber total</span>
-          <span className="font-mono font-semibold text-blue-600">${lumberTotal.toFixed(2)}</span>
+          <span className="font-mono font-semibold text-amber-600">${lumberTotal.toFixed(2)}</span>
         </div>
       </div>
 
@@ -957,10 +957,10 @@ function Step3Materials({
       </div>
 
       {/* E. Total Materials Cost */}
-      <div className="bg-white border-2 border-blue-200 rounded-lg p-4">
+      <div className="bg-white border-2 border-amber-200 rounded-lg p-4">
         <div className="flex justify-between items-center">
           <span className="font-semibold text-lg">Total Materials Cost</span>
-          <span className="text-2xl font-bold text-blue-600">${totalMaterialsCost.toFixed(2)}</span>
+          <span className="text-2xl font-bold text-amber-600">${totalMaterialsCost.toFixed(2)}</span>
         </div>
         <div className="flex justify-between text-xs text-gray-500 mt-1">
           <span>Lumber: ${lumberTotal.toFixed(2)}</span>
@@ -977,7 +977,7 @@ function Step3Materials({
         </button>
         <button
           onClick={onNext}
-          className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 min-h-[44px]"
+          className="flex-1 bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 min-h-[44px]"
         >
           Next: Labor & Time
         </button>
@@ -1021,8 +1021,8 @@ function Step4Labor({
     <div className="space-y-6">
       <h2 className="text-2xl font-bold">Step 4: Labor & Time</h2>
 
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-        <p className="text-sm font-medium text-blue-800">AI-Estimated Hours</p>
+      <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+        <p className="text-sm font-medium text-amber-800">AI-Estimated Hours</p>
         <p className="text-xs text-gray-600 mt-1">
           Based on {furnitureType ? <span className="capitalize font-medium">{furnitureType}</span> : 'furniture type'}
           {complexity ? <>, Tier {complexity} ({complexityLabels[complexity]})</> : ''}, and cut list board feet.
@@ -1112,7 +1112,7 @@ function Step4Labor({
         </div>
         <div className="flex justify-between">
           <span className="font-medium">Labor Cost (${shopRate}/hr):</span>
-          <span className="text-xl font-bold text-blue-600">
+          <span className="text-xl font-bold text-amber-600">
             ${totalLaborCost.toFixed(2)}
           </span>
         </div>
@@ -1127,7 +1127,7 @@ function Step4Labor({
         </button>
         <button
           onClick={onNext}
-          className="flex-1 bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 min-h-[44px]"
+          className="flex-1 bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 min-h-[44px]"
         >
           Next: Review
         </button>
@@ -1201,7 +1201,7 @@ function Step5Review({
           )}
           <div className="border-t pt-2 flex justify-between text-xl">
             <span className="font-bold">Grand Total:</span>
-            <span className="font-bold text-blue-600">${total.toFixed(2)}</span>
+            <span className="font-bold text-amber-600">${total.toFixed(2)}</span>
           </div>
         </div>
       </div>
@@ -1434,7 +1434,7 @@ export default function ProjectBuilder() {
               <div
                 className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold ${
                   step <= currentStep
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-amber-600 text-white'
                     : 'bg-gray-200 text-gray-500'
                 }`}
               >
@@ -1443,7 +1443,7 @@ export default function ProjectBuilder() {
               {step < 5 && (
                 <div
                   className={`w-16 h-1 ${
-                    step < currentStep ? 'bg-blue-600' : 'bg-gray-200'
+                    step < currentStep ? 'bg-amber-600' : 'bg-gray-200'
                   }`}
                 ></div>
               )}
@@ -1469,7 +1469,7 @@ export default function ProjectBuilder() {
             <div
               key={step}
               className={`flex-1 h-2 rounded-full ${
-                step <= currentStep ? 'bg-blue-600' : 'bg-gray-200'
+                step <= currentStep ? 'bg-amber-600' : 'bg-gray-200'
               }`}
             ></div>
           ))}
