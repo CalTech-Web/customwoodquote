@@ -173,3 +173,13 @@ DEPLOY: Ready (23s) - https://customwoodquote-bp0nnj7ll-brandon-7928s-projects.v
 - **Table of Contents updated**: FAQ entry added to pricing guide navigation
 - **Deployed**: Vercel Ready in 23s — pushed to origin
 [2026-03-18 01:52:55] Run #5 finished
+✅ **Completed**
+- **Homepage FAQPage schema**: 6-question JSON-LD targeting pre-purchase queries ("is CraftQuote free", "what furniture can I quote", "do I need an account", "how does AI analysis work", etc.) — eligible for FAQ rich snippets in Google SERPs
+- **Homepage FAQ section**: Rendered FAQ section between Features and Quote Builder with contextual link to /help
+- **Internal link**: "50+ Wood Species" feature card now links to /pricing-guide with anchor text "See the pricing guide" — distributes authority to the pricing content page
+- **Pricing guide FAQPage schema**: 5-question JSON-LD targeting high-value informational queries ("how much for a custom dining table", "fair shop rate", "waste factor", "profit margin", "hours to build a table")
+- **Pricing guide FAQ section**: "Common Pricing Questions" section added before the Calculator CTA, rendered from schema data
+- **Table of Contents**: Updated pricing guide navigation to include the FAQ section
+- **Deployed**: Vercel Ready in 23s — pushed to origin
+[2026-03-17 18:53:48] Run #5 finished
+[2026-03-17 18:53:48] Reached max loops (5). Stopping.

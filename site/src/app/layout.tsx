@@ -81,23 +81,23 @@ export default function RootLayout({
                 <div>
                   <div className="text-gray-300 font-semibold mb-3">Tools</div>
                   <div className="flex flex-col gap-2">
-                    <Link href="/projects/new" className="text-gray-400 hover:text-amber-400 transition-colors">New Quote</Link>
-                    <Link href="/calculator" className="text-gray-400 hover:text-amber-400 transition-colors">Board-Foot Calculator</Link>
-                    <Link href="/dashboard" className="text-gray-400 hover:text-amber-400 transition-colors">Dashboard</Link>
+                    <Link href="/projects/new" className="text-gray-300 hover:text-amber-400 transition-colors">New Quote</Link>
+                    <Link href="/calculator" className="text-gray-300 hover:text-amber-400 transition-colors">Board-Foot Calculator</Link>
+                    <Link href="/dashboard" className="text-gray-300 hover:text-amber-400 transition-colors">Dashboard</Link>
                   </div>
                 </div>
                 <div>
                   <div className="text-gray-300 font-semibold mb-3">Resources</div>
                   <div className="flex flex-col gap-2">
-                    <Link href="/pricing-guide" className="text-gray-400 hover:text-amber-400 transition-colors">Pricing Guide</Link>
-                    <Link href="/help" className="text-gray-400 hover:text-amber-400 transition-colors">Help</Link>
-                    <Link href="/settings" className="text-gray-400 hover:text-amber-400 transition-colors">Settings</Link>
+                    <Link href="/pricing-guide" className="text-gray-300 hover:text-amber-400 transition-colors">Pricing Guide</Link>
+                    <Link href="/help" className="text-gray-300 hover:text-amber-400 transition-colors">Help</Link>
+                    <Link href="/settings" className="text-gray-300 hover:text-amber-400 transition-colors">Settings</Link>
                   </div>
                 </div>
               </div>
             </div>
             <div className="border-t border-gray-700 mt-8 pt-6 text-center text-xs text-gray-500">
-              2026 CustomWoodQuote.com. All Rights Reserved.
+              &copy; 2026 CustomWoodQuote.com. All Rights Reserved.
             </div>
           </div>
         </footer>

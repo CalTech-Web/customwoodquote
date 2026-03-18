@@ -404,6 +404,9 @@ function Step1PhotoUpload({
       >
         {isAnalyzing ? 'Analyzing...' : 'Next: Dimensions'}
       </button>
+      {uploadedKeys.length === 0 && !isAnalyzing && (
+        <p className="text-center text-sm text-gray-500">Upload a photo to continue</p>
+      )}
     </div>
   );
 }
@@ -1442,7 +1445,7 @@ export default function ProjectBuilder() {
               </div>
               {step < 5 && (
                 <div
-                  className={`w-16 h-1 ${
+                  className={`flex-1 h-1 ${
                     step < currentStep ? 'bg-amber-600' : 'bg-gray-200'
                   }`}
                 ></div>

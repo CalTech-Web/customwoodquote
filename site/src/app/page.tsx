@@ -155,7 +155,7 @@ export default function Home() {
       {/* How It Works */}
       <section className="bg-white border-y border-gray-100 px-6 py-14 lg:px-8">
         <div className="mx-auto max-w-5xl">
-          <h2 className="text-center text-sm font-semibold uppercase tracking-widest text-amber-600 mb-10">
+          <h2 className="text-center text-base font-bold uppercase tracking-widest text-amber-600 mb-10">
             How It Works
           </h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">

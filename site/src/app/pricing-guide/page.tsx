@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How to Price Custom Furniture Projects - Complete Guide | CraftQuote",
+  title: "How to Price Custom Furniture Projects - Complete Guide",
   description: "Learn how to price custom woodworking and furniture projects profitably. Understand material costs, labor rates, overhead, and profit margins with our comprehensive pricing guide.",
   keywords: ["how to price woodworking projects", "custom furniture pricing guide", "woodworking pricing", "furniture pricing strategy", "shop rate calculator"],
   alternates: {
@@ -327,42 +327,42 @@ export default function PricingGuide() {
 
           <div className="space-y-4">
             <div className="rounded-lg bg-red-50 border border-red-200 p-6">
-              <h3 className="text-lg font-semibold text-red-900 mb-2">❌ Only Tracking Shop Hours</h3>
+              <h3 className="text-lg font-semibold text-red-900 mb-2"><span className="inline-block align-middle mr-1">❌</span> Only Tracking Shop Hours</h3>
               <p className="text-gray-700">
                 Design, client calls, materials runs, cleanup, delivery. Each of those is time you spent on this project. If you do not log it, you worked it for free.
               </p>
             </div>
 
             <div className="rounded-lg bg-red-50 border border-red-200 p-6">
-              <h3 className="text-lg font-semibold text-red-900 mb-2">❌ Skipping the Waste Factor</h3>
+              <h3 className="text-lg font-semibold text-red-900 mb-2"><span className="inline-block align-middle mr-1">❌</span> Skipping the Waste Factor</h3>
               <p className="text-gray-700">
                 Hardwood has defects. You will need test pieces for setup. A board cracks. Add 15% to your lumber estimate by default and adjust up for figured or difficult material.
               </p>
             </div>
 
             <div className="rounded-lg bg-red-50 border border-red-200 p-6">
-              <h3 className="text-lg font-semibold text-red-900 mb-2">❌ Ignoring Overhead</h3>
+              <h3 className="text-lg font-semibold text-red-900 mb-2"><span className="inline-block align-middle mr-1">❌</span> Ignoring Overhead</h3>
               <p className="text-gray-700">
                 The shop costs money whether you are building or not. Rent, insurance, utilities, and tool maintenance belong in every quote. If you skip them, clients are getting a subsidy they do not know about.
               </p>
             </div>
 
             <div className="rounded-lg bg-red-50 border border-red-200 p-6">
-              <h3 className="text-lg font-semibold text-red-900 mb-2">❌ Pricing Off Competitors</h3>
+              <h3 className="text-lg font-semibold text-red-900 mb-2"><span className="inline-block align-middle mr-1">❌</span> Pricing Off Competitors</h3>
               <p className="text-gray-700">
                 You do not know their shop rate, their overhead, or their material costs. Anchoring your price to theirs just means you are sharing their mistakes. Price from your own numbers.
               </p>
             </div>
 
             <div className="rounded-lg bg-red-50 border border-red-200 p-6">
-              <h3 className="text-lg font-semibold text-red-900 mb-2">❌ Confusing Cost Recovery with Profit</h3>
+              <h3 className="text-lg font-semibold text-red-900 mb-2"><span className="inline-block align-middle mr-1">❌</span> Confusing Cost Recovery with Profit</h3>
               <p className="text-gray-700">
                 Breaking even is not a sustainable business. Profit funds better tooling, absorbs slow months, and gives you negotiating room. Without it, one difficult job puts you in the hole.
               </p>
             </div>
 
             <div className="rounded-lg bg-red-50 border border-red-200 p-6">
-              <h3 className="text-lg font-semibold text-red-900 mb-2">❌ Cutting Margin When a Client Pushes Back</h3>
+              <h3 className="text-lg font-semibold text-red-900 mb-2"><span className="inline-block align-middle mr-1">❌</span> Cutting Margin When a Client Pushes Back</h3>
               <p className="text-gray-700">
                 Reduce scope instead. Simplify the joinery, swap species, remove a drawer. Your margin exists for a reason. Once you train clients that pushing gets results, they will push on every job.
               </p>
@@ -431,9 +431,15 @@ export default function PricingGuide() {
         <section className="mb-12">
           <div className="rounded-lg bg-amber-50 border border-amber-200 p-6">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">Start with your next quote</h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 mb-6">
               The fastest way to internalize this framework is to run a real project through it. Take a job you have already completed and work backward. Pull your actual lumber receipt, count your hours, and calculate what you needed to charge. The gap between that number and what you quoted is what this guide is for. Do that once and the formula sticks.
             </p>
+            <Link
+              href="/#quote-builder"
+              className="inline-block rounded-md bg-amber-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-amber-500"
+            >
+              Start Building a Quote
+            </Link>
           </div>
         </section>
       </article>

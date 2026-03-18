@@ -117,9 +117,17 @@ export default function PhotoUpload({
         <input {...getInputProps()} capture={isMobile ? 'environment' : undefined} />
         <div className="text-gray-600">
           {isDragActive ? (
-            <p>Drop the images here...</p>
+            <>
+              <svg className="w-10 h-10 mx-auto mb-3 text-amber-500" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+              </svg>
+              <p>Drop the images here...</p>
+            </>
           ) : (
             <>
+              <svg className="w-10 h-10 mx-auto mb-3 text-gray-400" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+              </svg>
               <p>Drag & drop images here, or click to select</p>
               <p className="text-sm text-gray-500 mt-2">
                 Max {maxFiles} files, {Math.round(maxSize / 1024 / 1024)}MB each

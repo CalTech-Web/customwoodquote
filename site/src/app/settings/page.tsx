@@ -412,7 +412,7 @@ export default function SettingsPage() {
             onClick={() => setActiveTab("business")}
             className={`px-4 py-2 font-medium whitespace-nowrap ${
               activeTab === "business"
-                ? "border-b-2 border-blue-600 text-blue-600"
+                ? "border-b-2 border-amber-600 text-amber-600"
                 : "text-gray-600 hover:text-gray-800"
             }`}
           >
@@ -422,7 +422,7 @@ export default function SettingsPage() {
             onClick={() => setActiveTab("pricing")}
             className={`px-4 py-2 font-medium whitespace-nowrap ${
               activeTab === "pricing"
-                ? "border-b-2 border-blue-600 text-blue-600"
+                ? "border-b-2 border-amber-600 text-amber-600"
                 : "text-gray-600 hover:text-gray-800"
             }`}
           >
@@ -432,7 +432,7 @@ export default function SettingsPage() {
             onClick={() => setActiveTab("materials")}
             className={`px-4 py-2 font-medium whitespace-nowrap ${
               activeTab === "materials"
-                ? "border-b-2 border-blue-600 text-blue-600"
+                ? "border-b-2 border-amber-600 text-amber-600"
                 : "text-gray-600 hover:text-gray-800"
             }`}
           >
@@ -442,7 +442,7 @@ export default function SettingsPage() {
             onClick={() => setActiveTab("preferences")}
             className={`px-4 py-2 font-medium whitespace-nowrap ${
               activeTab === "preferences"
-                ? "border-b-2 border-blue-600 text-blue-600"
+                ? "border-b-2 border-amber-600 text-amber-600"
                 : "text-gray-600 hover:text-gray-800"
             }`}
           >
@@ -452,7 +452,7 @@ export default function SettingsPage() {
             onClick={() => setActiveTab("templates")}
             className={`px-4 py-2 font-medium whitespace-nowrap ${
               activeTab === "templates"
-                ? "border-b-2 border-blue-600 text-blue-600"
+                ? "border-b-2 border-amber-600 text-amber-600"
                 : "text-gray-600 hover:text-gray-800"
             }`}
           >
@@ -462,7 +462,7 @@ export default function SettingsPage() {
             onClick={() => setActiveTab("help")}
             className={`px-4 py-2 font-medium whitespace-nowrap ${
               activeTab === "help"
-                ? "border-b-2 border-blue-600 text-blue-600"
+                ? "border-b-2 border-amber-600 text-amber-600"
                 : "text-gray-600 hover:text-gray-800"
             }`}
           >
@@ -563,14 +563,14 @@ export default function SettingsPage() {
                   inputMode="email"
                   value={businessInfo.email}
                   readOnly
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-100 cursor-not-allowed"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md bg-white cursor-not-allowed"
                 />
               </div>
 
               <button
                 onClick={saveBusinessInfo}
                 disabled={loading}
-                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 disabled:bg-gray-400"
+                className="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700 disabled:bg-gray-400"
               >
                 {loading ? "Saving..." : "Save Business Info"}
               </button>
@@ -690,7 +690,7 @@ export default function SettingsPage() {
               <button
                 onClick={savePricingDefaults}
                 disabled={loading}
-                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 disabled:bg-gray-400"
+                className="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700 disabled:bg-gray-400"
               >
                 {loading ? "Saving..." : "Save Pricing Defaults"}
               </button>
@@ -877,7 +877,7 @@ export default function SettingsPage() {
               <button
                 onClick={saveQuotePreferences}
                 disabled={loading}
-                className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 disabled:bg-gray-400"
+                className="bg-amber-600 text-white px-6 py-2 rounded hover:bg-amber-700 disabled:bg-gray-400"
               >
                 {loading ? "Saving..." : "Save Quote Preferences"}
               </button>
@@ -892,7 +892,7 @@ export default function SettingsPage() {
               <h2 className="text-xl font-semibold">Project Templates</h2>
               <button
                 onClick={() => setShowTemplateModal(true)}
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                className="bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700"
               >
                 + Create Template
               </button>
@@ -957,7 +957,7 @@ export default function SettingsPage() {
                 <button
                   onClick={saveMaterialOverride}
                   disabled={loading}
-                  className="flex-1 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:bg-gray-400"
+                  className="flex-1 bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700 disabled:bg-gray-400"
                 >
                   {loading ? "Saving..." : "Save Override"}
                 </button>
@@ -1050,7 +1050,7 @@ export default function SettingsPage() {
                   <button
                     onClick={saveTemplate}
                     disabled={loading || !newTemplate.name}
-                    className="flex-1 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:bg-gray-400"
+                    className="flex-1 bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700 disabled:bg-gray-400"
                   >
                     {loading ? "Saving..." : "Save Template"}
                   </button>

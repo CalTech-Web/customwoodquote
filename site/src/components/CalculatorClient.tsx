@@ -274,7 +274,7 @@ export default function CalculatorClient() {
           Prices vary by region, grade, and supplier. Use these as baseline estimates and update
           with your actual supplier costs in the full quote builder.
         </p>
-        <div className="overflow-x-auto">
+        <div className="w-full">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b-2 border-gray-200">
@@ -342,9 +342,9 @@ export default function CalculatorClient() {
       </div>
 
       {/* CTA Section */}
-      <div className="mt-12 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-600 p-8 text-center shadow-xl">
+      <div className="mt-12 rounded-2xl bg-gradient-to-r from-amber-600 to-amber-700 p-8 text-center shadow-xl">
         <h2 className="text-2xl font-bold text-white mb-4">Board feet are step one.</h2>
-        <p className="text-amber-50 mb-6 max-w-2xl mx-auto">
+        <p className="text-white font-medium mb-6 max-w-2xl mx-auto">
           The full quote still needs hardware, labor by category, overhead, and your margin.
           CraftQuote handles all of it, starting from a photo of the piece.
         </p>
