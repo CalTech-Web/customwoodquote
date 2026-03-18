@@ -102,3 +102,40 @@ DEPLOY: Ready (24s) - https://customwoodquote-10fibl8qk-brandon-7928s-projects.v
 - **Article OG enriched**: /pricing-guide now declares publishedTime, authors, section, and image in OpenGraph — eligible for article rich results
 - **Deployed**: Vercel Ready in 24s
 [2026-03-18 01:37:00] Run #3 finished
+✅ **Completed**
+- **Pricing guide navigation fix**: Removed duplicate `<header>` and `<footer>` embedded in `pricing-guide/page.tsx` that were conflicting with the root layout's NavBar and footer — eliminates duplicate nav links in crawled HTML
+- **OG images**: `/calculator` and `/help` now have `og:image` (1200x630) and `twitter:card summary_large_image` for rich social share previews
+- **BreadcrumbList schema**: All three inner pages (`/calculator`, `/pricing-guide`, `/help`) now declare breadcrumb structured data — enables breadcrumb display in Google SERPs
+- **Article OG enriched**: `/pricing-guide` now declares `publishedTime`, `authors`, `section`, and `image` in OpenGraph — eligible for article rich results
+- **Deployed**: Vercel Ready in 24s — pushed to origin
+[2026-03-17 18:38:06] Run #3 finished
+[2026-03-17 18:38:11] Run #4 starting (model: sonnet)
+
+[2026-03-18] Calculator Page Overhaul - customwoodquote.com (CraftQuote)
+
+ISSUES FOUND:
+- CalculatorClient.tsx rendered its own <header> (CraftQuote logo + CTA) and <footer> inside the root layout's <main>, creating two navbars and two footers on /calculator — same duplicate nav bug fixed on pricing-guide in Run #3
+- /calculator had no FAQ section and no FAQPage schema (missed rich snippet opportunity)
+- No wood species pricing reference table — missing long-tail keyword coverage for searches like "walnut price per board foot", "white oak furniture cost"
+- No internal link from calculator to /pricing-guide in body text
+- Organization schema in root layout missing logo property
+
+CHANGES MADE:
+1. CalculatorClient.tsx: Removed duplicate <header> and <footer>; replaced outer min-h-screen wrapper with max-w-4xl div; all navigation now handled by root layout NavBar and footer
+2. CalculatorClient.tsx: Added wood species pricing reference table (12 species sorted by price, with price/bf, common uses, and Premium/Mid-range/Budget tier badges)
+3. CalculatorClient.tsx: Added FAQ section (5 questions) matching FAQPage schema
+4. CalculatorClient.tsx: Added internal link from educational section to /pricing-guide
+5. calculator/page.tsx: Added FAQPage JSON-LD schema (5 questions: what is a board foot, how to calculate, dining table board feet, most expensive wood, why board feet) — rich snippet eligibility
+6. layout.tsx: Added logo ImageObject to Organization schema
+
+BUILD: Passed - all pages compile as static correctly
+DEPLOY: Ready (28s) - https://customwoodquote-zbdyw92qk-brandon-7928s-projects.vercel.app
+
+✅ **Completed**
+- **Calculator duplicate nav fixed**: Removed embedded `<header>` and `<footer>` from CalculatorClient — /calculator was rendering two navbars and two footers inside `<main>`, producing invalid HTML and confusing crawlers
+- **FAQPage schema**: Added 5-question JSON-LD to /calculator targeting "what is a board foot", "how to calculate board feet", "board feet for a dining table", "most expensive wood for furniture", "why lumber yards use board feet" — eligible for FAQ rich snippets in Google SERPs
+- **Wood species pricing table**: 12 species sorted by price with per board-foot costs, common furniture uses, and tier badges — targets long-tail queries like "walnut price per board foot", "white oak cost per board foot", "hardwood pricing for furniture"
+- **Internal link**: Calculator educational section now links to /pricing-guide with contextual anchor text "custom furniture pricing guide"
+- **Organization logo**: Added `logo: ImageObject` to Organization schema in root layout — improves Knowledge Panel eligibility
+- **Deployed**: Vercel Ready in 28s — pushed to origin
+[2026-03-18 01:47:00] Run #4 finished
