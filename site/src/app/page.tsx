@@ -144,6 +144,67 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Features Section */}
+      <section className="bg-gray-900 px-6 py-16 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">
+              Built for Woodworkers, Not Contractors
+            </h2>
+            <p className="mt-3 text-gray-400 max-w-xl mx-auto text-sm leading-relaxed">
+              Every feature was designed around the way custom furniture makers actually price their work.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-600 text-white mb-4">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 12.75a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zM18.75 10.5h.008v.008h-.008V10.5z" />
+                </svg>
+              </div>
+              <h3 className="text-base font-semibold text-white mb-2">AI Photo Analysis</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Upload any reference photo. AI detects furniture type, style, complexity, and joinery in seconds.
+              </p>
+            </div>
+            <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-600 text-white mb-4">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                </svg>
+              </div>
+              <h3 className="text-base font-semibold text-white mb-2">50+ Wood Species</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                Real market pricing for hardwoods, softwoods, and exotic species. Override any price with your actual supplier costs.
+              </p>
+            </div>
+            <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-600 text-white mb-4">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                </svg>
+              </div>
+              <h3 className="text-base font-semibold text-white mb-2">Professional Quotes</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                PDF and shareable web link your customers can accept online. Looks like you have a full studio behind you.
+              </p>
+            </div>
+            <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-amber-600 text-white mb-4">
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                </svg>
+              </div>
+              <h3 className="text-base font-semibold text-white mb-2">100% Free, No Account</h3>
+              <p className="text-sm text-gray-400 leading-relaxed">
+                No credit card, no signup, no usage limits. Start quoting immediately and keep every quote you build.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Quote Builder */}
       <section id="quote-builder" className="max-w-4xl mx-auto px-4 pb-16">
         <ProjectBuilder />
