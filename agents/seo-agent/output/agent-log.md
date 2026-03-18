@@ -66,3 +66,39 @@ DEPLOY: Ready (21s) - https://customwoodquote-1ytx2i4ht-brandon-7928s-projects.v
 - **WebApplication schema (calculator)**: Board foot calculator marked up as free WebApplication with featureList
 - **Deployed**: Production build passed, deployed to Vercel (Ready in 21s)
 [2026-03-17 18:45:00] Run #2 finished
+✅ **Completed**
+- **Canonical URLs**: Added `alternates.canonical` to `/`, `/calculator`, `/pricing-guide`, `/help`
+- **Organization + WebSite schema**: Added site-wide JSON-LD to root layout
+- **HowTo schema (homepage)**: 5-step quoting workflow marked up for rich snippet eligibility
+- **SoftwareApplication schema**: Enhanced with `featureList` (8 features)
+- **HowTo schema (/pricing-guide)**: 5-step pricing methodology (materials, shop rate, labor, overhead, margin)
+- **WebApplication schema (/calculator)**: Board foot calculator with `featureList` and free `Offer`
+- **Deployed**: Vercel Ready in 21s
+[2026-03-17 18:32:02] Run #2 finished
+[2026-03-17 18:32:07] Run #3 starting (model: sonnet)
+
+[2026-03-18] Duplicate Nav Fix + OG Images + Breadcrumb Schema - customwoodquote.com (CraftQuote)
+
+ISSUES FOUND:
+- pricing-guide/page.tsx had its own embedded <header> (CraftQuote logo + CTA) and <footer> duplicating the root layout's NavBar and footer
+- /calculator and /help pages had no OG images, meaning poor social sharing previews and low CTR
+- /calculator used twitter:card "summary" instead of "summary_large_image"
+- No BreadcrumbList schema on any inner page (missed opportunity for SERP breadcrumb display)
+- /pricing-guide OG was typed "article" but missing publishedTime, authors, section, and image
+
+CHANGES MADE:
+1. pricing-guide/page.tsx: Removed embedded <header> and <footer>, replaced wrapping div with fragment — root layout NavBar and footer now handle navigation site-wide
+2. calculator/page.tsx: Added OG image (og-image.jpg 1200x630), upgraded twitter card to summary_large_image, added BreadcrumbList schema (Home > Board Foot Calculator)
+3. help/page.tsx: Added OG image (og-image.jpg 1200x630), upgraded twitter card to summary_large_image, added BreadcrumbList schema (Home > Help & FAQ)
+4. pricing-guide/page.tsx: Added OG image, added publishedTime/authors/section to article OG metadata, added BreadcrumbList schema (Home > How to Price Custom Furniture)
+
+BUILD: Passed - all pages compile as static correctly
+DEPLOY: Ready (24s) - https://customwoodquote-10fibl8qk-brandon-7928s-projects.vercel.app
+
+✅ **Completed**
+- **Pricing guide navigation fix**: Removed duplicate header and footer that were conflicting with root layout NavBar; eliminates duplicate nav links in crawled HTML
+- **OG images added**: /calculator and /help now have og:image (1200x630) and twitter:card summary_large_image for rich social previews
+- **BreadcrumbList schema**: All three inner pages now declare breadcrumb structured data, enabling breadcrumb display in Google SERPs
+- **Article OG enriched**: /pricing-guide now declares publishedTime, authors, section, and image in OpenGraph — eligible for article rich results
+- **Deployed**: Vercel Ready in 24s
+[2026-03-18 01:37:00] Run #3 finished
