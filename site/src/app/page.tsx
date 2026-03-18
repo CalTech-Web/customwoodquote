@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import ProjectBuilder from "@/components/ProjectBuilder";
+import dynamic from "next/dynamic";
+
+const ProjectBuilder = dynamic(() => import("@/components/ProjectBuilder"));
 
 export const metadata: Metadata = {
   title: "CraftQuote - Quoting Software for Custom Woodworkers",
