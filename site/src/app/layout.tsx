@@ -41,6 +41,27 @@ export default function RootLayout({
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {children}
         </main>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "CraftQuote",
+                "url": "https://customwoodquote.com",
+                "description": "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations. Free with no account required.",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "CraftQuote",
+                "url": "https://customwoodquote.com",
+                "description": "AI-assisted quoting software for custom woodworkers.",
+              },
+            ]),
+          }}
+        />
         <footer className="bg-gray-800 text-white mt-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="flex flex-col md:flex-row justify-between gap-8">

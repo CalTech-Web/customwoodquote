@@ -3,10 +3,13 @@ import ProjectBuilder from "@/components/ProjectBuilder";
 
 export const metadata: Metadata = {
   title: "CraftQuote - Quoting Software for Custom Woodworkers",
-  description: "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations. Trusted by 100+ woodworkers.",
+  description: "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations. Free with no account required.",
+  alternates: {
+    canonical: "https://customwoodquote.com",
+  },
   openGraph: {
     title: "CraftQuote - Quoting Software for Custom Woodworkers",
-    description: "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations.",
+    description: "AI-assisted quoting software for custom woodworkers. Upload a reference photo, confirm the details, and send a professional quote in minutes. Free with no account required.",
     type: "website",
     url: "https://customwoodquote.com",
     images: [
@@ -21,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "CraftQuote - Quoting Software for Custom Woodworkers",
-    description: "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations.",
+    description: "AI-assisted quoting software for custom woodworkers. Upload a reference photo, confirm the details, and send a professional quote in minutes. Free with no account required.",
     images: ["/og-image.jpg"],
   },
 };
@@ -30,7 +33,7 @@ const HOW_IT_WORKS = [
   {
     step: 1,
     title: "Upload a Photo",
-    description: "Upload 1 to 3 reference photos of the furniture piece you need to quote.",
+    description: "Drop in a photo from your phone or laptop. Customer inspiration images work too.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
@@ -39,8 +42,8 @@ const HOW_IT_WORKS = [
   },
   {
     step: 2,
-    title: "AI Identifies the Piece",
-    description: "AI detects furniture type, style, complexity, joinery, and component count automatically.",
+    title: "AI Reads the Piece",
+    description: "AI flags the furniture type, style, joinery, and complexity tier. Takes about five seconds.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
@@ -50,7 +53,7 @@ const HOW_IT_WORKS = [
   {
     step: 3,
     title: "Refine the Details",
-    description: "Confirm AI suggestions, enter exact dimensions, and select your wood species and finish.",
+    description: "Edit anything the AI got wrong. Enter real dimensions and pick your species from the pricing database.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
@@ -59,8 +62,8 @@ const HOW_IT_WORKS = [
   },
   {
     step: 4,
-    title: "Review Your Pricing",
-    description: "See a full breakdown of materials, labor, overhead, and margin before sending anything.",
+    title: "Check the Numbers",
+    description: "Every line itemized: lumber, hardware, finish, labor by category, and your overhead. Fix it before it leaves your shop.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
@@ -70,7 +73,7 @@ const HOW_IT_WORKS = [
   {
     step: 5,
     title: "Send a Pro Quote",
-    description: "Generate a branded PDF or shareable link your customer can accept or decline online.",
+    description: "Your customer gets a clean, branded link. They accept or request changes on the spot. You get notified.",
     icon: (
       <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
@@ -94,10 +97,10 @@ export default function Home() {
       <section className="bg-gradient-to-b from-amber-50 to-white px-6 py-16 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            AI-Assisted Quoting for Custom Woodworkers
+            Stop Underpricing Custom Furniture
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Create professional quotes in minutes with AI-powered photo analysis, accurate board-foot calculations, and material pricing. Stop losing money on underpriced projects.
+            Most woodworkers spend 3 to 15 hours a week on quotes and still get the number wrong. CraftQuote takes a reference photo and walks you through materials, labor, and overhead in minutes. You get an accurate quote. Your customer gets a clean link to accept it.
           </p>
           <div className="mt-8">
             <a
@@ -152,7 +155,7 @@ export default function Home() {
               Built for Woodworkers, Not Contractors
             </h2>
             <p className="mt-3 text-gray-400 max-w-xl mx-auto text-sm leading-relaxed">
-              Every feature was designed around the way custom furniture makers actually price their work.
+              Every other quoting tool assumes you are a general contractor. This one does not.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -165,7 +168,7 @@ export default function Home() {
               </div>
               <h3 className="text-base font-semibold text-white mb-2">AI Photo Analysis</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Upload any reference photo. AI detects furniture type, style, complexity, and joinery in seconds.
+                Snap a photo or upload a customer&apos;s inspiration image. The AI reads it and pre-fills the builder. You confirm and move on.
               </p>
             </div>
             <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
@@ -176,7 +179,7 @@ export default function Home() {
               </div>
               <h3 className="text-base font-semibold text-white mb-2">50+ Wood Species</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                Real market pricing for hardwoods, softwoods, and exotic species. Override any price with your actual supplier costs.
+                White oak, walnut, cherry, hard maple, ash. Market pricing built in. Plug in your own supplier costs if they differ.
               </p>
             </div>
             <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
@@ -187,7 +190,7 @@ export default function Home() {
               </div>
               <h3 className="text-base font-semibold text-white mb-2">Professional Quotes</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                PDF and shareable web link your customers can accept online. Looks like you have a full studio behind you.
+                A branded PDF and a shareable link your customer can view without logging in. Accept, decline, or request changes, right from the link.
               </p>
             </div>
             <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
@@ -198,7 +201,7 @@ export default function Home() {
               </div>
               <h3 className="text-base font-semibold text-white mb-2">100% Free, No Account</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                No credit card, no signup, no usage limits. Start quoting immediately and keep every quote you build.
+                No signup. No credit card. No usage cap. Open the tool and start quoting. Every quote you build is yours to keep.
               </p>
             </div>
           </div>
@@ -213,20 +216,71 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "CraftQuote",
-            "applicationCategory": "BusinessApplication",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "CraftQuote",
+              "applicationCategory": "BusinessApplication",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "description": "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations.",
+              "operatingSystem": "Web",
+              "url": "https://customwoodquote.com",
+              "featureList": [
+                "AI photo analysis for furniture type, style, and complexity",
+                "50+ wood species with per board-foot pricing",
+                "Board-foot calculator",
+                "Labor estimation by category",
+                "Overhead allocation",
+                "Professional branded PDF quotes",
+                "Shareable quote links with customer accept/decline flow",
+                "No account required"
+              ],
             },
-            "description": "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations.",
-            "operatingSystem": "Web",
-            "url": "https://customwoodquote.com"
-          })
+            {
+              "@context": "https://schema.org",
+              "@type": "HowTo",
+              "name": "How to Create a Custom Furniture Quote with CraftQuote",
+              "description": "Create an accurate, professional custom furniture quote in minutes using AI photo analysis and real material pricing.",
+              "totalTime": "PT5M",
+              "step": [
+                {
+                  "@type": "HowToStep",
+                  "position": 1,
+                  "name": "Upload a Photo",
+                  "text": "Drop in a photo from your phone or laptop. Customer inspiration images work too.",
+                },
+                {
+                  "@type": "HowToStep",
+                  "position": 2,
+                  "name": "AI Reads the Piece",
+                  "text": "AI flags the furniture type, style, joinery, and complexity tier. Takes about five seconds.",
+                },
+                {
+                  "@type": "HowToStep",
+                  "position": 3,
+                  "name": "Refine the Details",
+                  "text": "Edit anything the AI got wrong. Enter real dimensions and pick your species from the pricing database.",
+                },
+                {
+                  "@type": "HowToStep",
+                  "position": 4,
+                  "name": "Check the Numbers",
+                  "text": "Every line itemized: lumber, hardware, finish, labor by category, and your overhead. Fix it before it leaves your shop.",
+                },
+                {
+                  "@type": "HowToStep",
+                  "position": 5,
+                  "name": "Send a Pro Quote",
+                  "text": "Your customer gets a clean, branded link. They accept or request changes on the spot. You get notified.",
+                },
+              ],
+            },
+          ])
         }}
       />
     </div>

@@ -4,6 +4,9 @@ import HelpClient from "@/components/HelpClient";
 export const metadata: Metadata = {
   title: "Help & FAQ - Woodworking Quote Tool",
   description: "Get help with CraftQuote, the free AI woodworking quote tool. Find answers to common questions about the quote builder, board-foot pricing, and sending professional quotes.",
+  alternates: {
+    canonical: "https://customwoodquote.com/help",
+  },
   openGraph: {
     title: "Help & FAQ - CraftQuote Woodworking Quote Tool",
     description: "Get help with CraftQuote. Answers to common questions about building quotes, pricing, and sending professional estimates to customers.",
