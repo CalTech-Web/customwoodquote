@@ -1,6 +1,12 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import ProjectBuilder from "@/components/ProjectBuilder";
+import dynamic from "next/dynamic";
+
+const ProjectBuilder = dynamic(() => import("@/components/ProjectBuilder"), {
+  loading: () => (
+    <div className="animate-pulse bg-gray-100 rounded-xl h-64 w-full" />
+  ),
+});
 
 export const metadata: Metadata = {
   title: "CraftQuote - Quoting Software for Custom Woodworkers",
