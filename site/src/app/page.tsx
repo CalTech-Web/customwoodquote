@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import ProjectBuilder from "@/components/ProjectBuilder";
 
 export const metadata: Metadata = {
@@ -79,6 +80,33 @@ const HOW_IT_WORKS = [
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
       </svg>
     ),
+  },
+];
+
+const HOME_FAQS = [
+  {
+    q: "Is CraftQuote free to use?",
+    a: "Yes, completely free. No account required, no credit card, no usage limit. Open the tool and start quoting immediately.",
+  },
+  {
+    q: "What types of furniture can I quote?",
+    a: "Any custom piece: dining tables, chairs, cabinets, desks, beds, shelving, benches, entertainment centers. If it is made of wood and needs a materials and labor estimate, CraftQuote handles it.",
+  },
+  {
+    q: "Do I need to create an account?",
+    a: "No account is required. Build and share a professional quote without signing up. An optional account lets you save projects to a dashboard for tracking and duplicating later.",
+  },
+  {
+    q: "How does AI photo analysis work for furniture quotes?",
+    a: "Upload one to three reference photos of the piece. The AI identifies furniture type, style, joinery techniques, and complexity tier in a few seconds. Confirm the analysis, enter your dimensions, pick your wood species, and the quote builds from there.",
+  },
+  {
+    q: "Can I use my own wood species prices?",
+    a: "Yes. Every price in the 50-plus species database is editable. Enter your actual supplier cost for any species and the board-foot calculation updates instantly.",
+  },
+  {
+    q: "How long does it take to create a furniture quote?",
+    a: "Most quotes take 5 to 15 minutes from photo upload to sharing the link with your customer. Complex pieces with multiple species or custom hardware may take longer.",
   },
 ];
 
@@ -179,7 +207,10 @@ export default function Home() {
               </div>
               <h3 className="text-base font-semibold text-white mb-2">50+ Wood Species</h3>
               <p className="text-sm text-gray-400 leading-relaxed">
-                White oak, walnut, cherry, hard maple, ash. Market pricing built in. Plug in your own supplier costs if they differ.
+                White oak, walnut, cherry, hard maple, ash. Market pricing built in. Plug in your own supplier costs if they differ.{" "}
+                <Link href="/pricing-guide" className="text-amber-400 hover:underline">
+                  See the pricing guide
+                </Link>
               </p>
             </div>
             <div className="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-amber-600 transition-colors">
@@ -208,6 +239,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="border-b border-gray-100 px-6 py-14 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-2">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-center text-sm text-gray-500 mb-10">
+            More questions?{" "}
+            <Link href="/help" className="text-amber-600 hover:underline">
+              Visit the Help page
+            </Link>
+          </p>
+          <dl className="divide-y divide-gray-100">
+            {HOME_FAQS.map(({ q, a }) => (
+              <div key={q} className="py-6">
+                <dt className="text-base font-semibold text-gray-900 mb-2">{q}</dt>
+                <dd className="text-sm text-gray-600 leading-relaxed">{a}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       {/* Quote Builder */}
       <section id="quote-builder" className="max-w-4xl mx-auto px-4 pb-16">
         <ProjectBuilder />
@@ -217,6 +271,18 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": HOME_FAQS.map(({ q, a }) => ({
+                "@type": "Question",
+                "name": q,
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": a,
+                },
+              })),
+            },
             {
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",

@@ -51,6 +51,53 @@ const breadcrumbSchema = {
   ],
 };
 
+const pricingFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much should I charge for a custom dining table?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A walnut dining table (72 inches by 36 inches) typically runs $2,500 to $4,500 depending on design complexity, joinery, and your shop rate. Start with your actual cost: lumber, hardware, all labor hours including design and delivery, and overhead. Then add your profit margin, typically 20 to 30 percent. The number you land on is the right price.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What is a fair hourly shop rate for a custom woodworker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most custom woodworkers charge $45 to $100 per hour. Your rate should cover your desired income, taxes, benefits, and a share of monthly overhead. Calculate it by starting with your required annual take-home, adding taxes (roughly 30 percent) and annual overhead, then dividing by your realistic billable hours per year, typically 1,200 to 1,600.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate the waste factor for a wood project?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Add 10 to 20 percent to your calculated lumber volume. Use 15 percent as a default for standard hardwoods. Increase to 20 to 25 percent for figured, highly figured, or difficult stock where defects are more common. Always buy more than you think you need: running short mid-project costs far more than the extra board.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What profit margin should a custom furniture maker target?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "15 to 20 percent is the minimum for a sustainable business. Most successful furniture makers target 25 to 35 percent on standard work. Margins above 35 percent are achievable on premium, one-of-a-kind pieces. Higher margins fund equipment, absorb slow months, and give you room when a job runs long.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "How many hours does it take to build a custom dining table?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A medium-complexity dining table takes 25 to 40 shop hours depending on size, joinery type, and finish. Add design and client calls (3 to 5 hours), material runs (1 to 2 hours), and delivery (1 to 3 hours). Most makers undercount by 20 to 30 percent, which is the most common cause of underpriced jobs.",
+      },
+    },
+  ],
+};
+
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
@@ -102,6 +149,10 @@ export default function PricingGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingFaqSchema) }}
+      />
       <article className="mx-auto max-w-3xl px-2 py-8 lg:px-4">
         {/* Title Section */}
         <header className="mb-10">
@@ -121,7 +172,8 @@ export default function PricingGuide() {
             <li><a href="#shop-rate" className="hover:text-amber-600">2. Setting Your Shop Rate</a></li>
             <li><a href="#profit-margins" className="hover:text-amber-600">3. Profit Margins Explained</a></li>
             <li><a href="#pricing-mistakes" className="hover:text-amber-600">4. Common Pricing Mistakes</a></li>
-            <li><a href="#calculator" className="hover:text-amber-600">5. Use Our Calculator</a></li>
+            <li><a href="#faq" className="hover:text-amber-600">5. Common Pricing Questions</a></li>
+            <li><a href="#calculator" className="hover:text-amber-600">6. Use Our Calculator</a></li>
           </ul>
         </nav>
 
@@ -316,6 +368,19 @@ export default function PricingGuide() {
               </p>
             </div>
           </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Common Pricing Questions</h2>
+          <dl className="divide-y divide-gray-200">
+            {pricingFaqSchema.mainEntity.map((item) => (
+              <div key={item.name} className="py-6">
+                <dt className="text-lg font-semibold text-gray-900 mb-3">{item.name}</dt>
+                <dd className="text-gray-600 leading-relaxed">{item.acceptedAnswer.text}</dd>
+              </div>
+            ))}
+          </dl>
         </section>
 
         {/* Calculator Embed Section */}
