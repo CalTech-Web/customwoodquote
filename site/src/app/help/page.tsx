@@ -12,12 +12,40 @@ export const metadata: Metadata = {
     description: "Get help with CraftQuote. Answers to common questions about building quotes, pricing, and sending professional estimates to customers.",
     type: "website",
     url: "https://customwoodquote.com/help",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CraftQuote Help & FAQ",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Help & FAQ - CraftQuote Woodworking Quote Tool",
     description: "Get help with CraftQuote. Answers to common questions about building quotes, pricing, and sending professional estimates.",
+    images: ["/og-image.jpg"],
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://customwoodquote.com",
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Help & FAQ",
+      "item": "https://customwoodquote.com/help",
+    },
+  ],
 };
 
 const faqSchema = {
@@ -94,6 +122,10 @@ const faqSchema = {
 export default function HelpPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

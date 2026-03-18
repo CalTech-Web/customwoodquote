@@ -13,12 +13,42 @@ export const metadata: Metadata = {
     description: "Learn how to price custom woodworking and furniture projects profitably. Complete guide covering materials, labor, overhead, and profit margins.",
     type: "article",
     url: "https://customwoodquote.com/pricing-guide",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "How to Price Custom Furniture Projects - CraftQuote Guide",
+      },
+    ],
+    publishedTime: "2026-03-17T00:00:00Z",
+    authors: ["https://customwoodquote.com"],
+    section: "Woodworking Pricing",
   },
   twitter: {
     card: "summary_large_image",
     title: "How to Price Custom Furniture Projects - Complete Guide",
     description: "Learn how to price custom woodworking and furniture projects profitably.",
   },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://customwoodquote.com",
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "How to Price Custom Furniture",
+      "item": "https://customwoodquote.com/pricing-guide",
+    },
+  ],
 };
 
 const howToSchema = {
@@ -63,29 +93,16 @@ const howToSchema = {
 
 export default function PricingGuide() {
   return (
-    <div className="min-h-screen bg-white">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
-      {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="mx-auto max-w-7xl px-6 py-4 lg:px-8">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-amber-600">
-              CraftQuote
-            </Link>
-            <Link
-              href="/#quote-builder"
-              className="rounded-md bg-amber-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-amber-500"
-            >
-              Build a Quote
-            </Link>
-          </div>
-        </div>
-      </header>
-
-      <article className="mx-auto max-w-3xl px-6 py-12 lg:px-8">
+      <article className="mx-auto max-w-3xl px-2 py-8 lg:px-4">
         {/* Title Section */}
         <header className="mb-10">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl mb-4">
@@ -355,28 +372,6 @@ export default function PricingGuide() {
           </div>
         </section>
       </article>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 mt-16">
-        <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-          <div className="flex justify-center space-x-6 md:order-2">
-            <Link href="/" className="text-gray-400 hover:text-gray-300">
-              Home
-            </Link>
-            <Link href="/calculator" className="text-gray-400 hover:text-gray-300">
-              Calculator
-            </Link>
-            <Link href="/#quote-builder" className="text-gray-400 hover:text-gray-300">
-              Build a Quote
-            </Link>
-          </div>
-          <div className="mt-8 md:order-1 md:mt-0">
-            <p className="text-center text-xs leading-5 text-gray-400">
-              &copy; 2026 CraftQuote. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
+    </>
   );
 }
