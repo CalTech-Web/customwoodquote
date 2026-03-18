@@ -442,6 +442,33 @@ export default function PricingGuide() {
             </Link>
           </div>
         </section>
+
+        {/* Related Resources */}
+        <section className="mb-12">
+          <div className="rounded-lg border border-gray-200 p-6">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Related Resources</h2>
+            <div className="space-y-3 text-sm">
+              <div>
+                <Link href="/cabinet-pricing" className="font-semibold text-amber-700 hover:underline">
+                  Custom Cabinet Pricing Guide
+                </Link>
+                <p className="text-gray-600 mt-0.5">Cabinet-specific pricing: cost per linear foot, cabinet types, cost drivers, and how to quote a full cabinet job accurately.</p>
+              </div>
+              <div>
+                <Link href="/quote-template" className="font-semibold text-amber-700 hover:underline">
+                  Woodworking Quote Template
+                </Link>
+                <p className="text-gray-600 mt-0.5">Every section a professional quote needs, with a complete worked example covering materials, labor, overhead, and margin.</p>
+              </div>
+              <div>
+                <Link href="/calculator" className="font-semibold text-amber-700 hover:underline">
+                  Board Foot Calculator
+                </Link>
+                <p className="text-gray-600 mt-0.5">Calculate lumber volume and material cost for 12 common hardwoods and softwoods.</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </article>
     </>
   );
