@@ -373,11 +373,7 @@ export default function WoodMantelCost() {
                 name: "Live Edge Slab Mantel",
                 range: "$1,100 to $4,000",
                 description:
-                  "A live edge mantel uses a slab of solid wood that retains the natural edge of the tree on one or both sides. Live edge mantels in walnut, white oak, or cherry are popular in contemporary and organic-modern interiors where the natural form is the focal point. The slab is typically 3 to 5 inches thick and 6 to 10 inches deep, wide enough to hold decorative items. Voids and bark pockets in the live edge are often stabilized with epoxy before finishing. Live edge slabs are priced by the slab, not purely by the board foot, and sourcing a quality piece with the right dimensions adds time to the project. See the{" "}
-                  <Link href="/walnut-slab-prices" className="text-amber-700 hover:underline">
-                    walnut slab prices guide
-                  </Link>
-                  {" "}for current slab market pricing.",
+                  "A live edge mantel uses a slab of solid wood that retains the natural edge of the tree on one or both sides. Live edge mantels in walnut, white oak, or cherry are popular in contemporary and organic-modern interiors where the natural form is the focal point. The slab is typically 3 to 5 inches thick and 6 to 10 inches deep, wide enough to hold decorative items. Voids and bark pockets in the live edge are often stabilized with epoxy before finishing. Live edge slabs are priced by the slab, not purely by the board foot, and sourcing a quality piece with the right dimensions adds time to the project. See the walnut slab prices guide for current slab market pricing.",
               },
               {
                 name: "Full Fireplace Surround",
