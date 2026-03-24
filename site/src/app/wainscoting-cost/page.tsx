@@ -392,38 +392,38 @@ export default function WainscotingCost() {
           </p>
 
           <div className="space-y-4">
-            {[
-              {
-                title: "Beadboard wainscoting",
-                subtitle: "$6 to $15 per square foot installed",
-                text: "Beadboard uses narrow tongue-and-groove boards or MDF panels with a series of vertical ridges (the beads) separated by grooves. It is the most casual and least expensive wainscoting style. MDF beadboard panels are the fastest and cheapest option: a 4x8 sheet covers 32 square feet of wall and is installed with construction adhesive and finish nails. Solid pine or poplar tongue-and-groove beadboard is installed board by board and produces a higher-quality result. Both styles are typically painted. Beadboard is most common in bathrooms, kitchens, mudrooms, and cottage-style interiors.",
-              },
-              {
-                title: "Board and batten wainscoting",
-                subtitle: "$8 to $32 per square foot installed",
-                text: "Board and batten uses wide vertical boards (the boards) with narrow strips (the battens) covering the joints. In modern wainscoting applications, the boards are typically flush MDF or solid wood panels and the battens are surface-applied decorative strips that create a grid or ladder pattern. The wide board spacing and bold battens give a clean, contemporary look that has become one of the most requested wainscoting styles. Paint-grade board and batten in MDF or pine is the most affordable version. White oak or ash board and batten with an oil finish is a premium version that commands $22 to $36 per square foot installed. See{" "}
-                  <Link href="/shiplap-cost" className="text-amber-700 hover:underline">shiplap cost</Link>{" "}
-                  for a related wall treatment project comparison.",
-              },
-              {
-                title: "Raised panel wainscoting",
-                subtitle: "$28 to $55 per square foot installed",
-                text: "Raised panel wainscoting is the most traditional and formal style. It consists of a framework of horizontal rails and vertical stiles with solid wood panels fitted inside each opening. The panels are either flat (recessed panel) or raised (the panel surface is elevated above the frame). Raised panels require a panel raising bit or a moulder to produce the distinctive profile. Raised panel wainscoting is labor-intensive: each panel must be individually fitted, the joints must be precise, and the entire assembly must be installed plumb and level. It is most appropriate for formal dining rooms, entryways, and studies in traditional homes.",
-              },
-              {
-                title: "Shiplap wainscoting",
-                subtitle: "$10 to $25 per square foot installed",
-                text: "Shiplap wainscoting uses the same overlapping rabbet-joint boards as full-wall shiplap but only covers the lower portion of the wall, typically 32 to 48 inches high, finished with a cap rail at the top. It combines the casual texture of shiplap with the defined architectural line of wainscoting. Painted pine shiplap wainscoting is the most affordable version. White oak shiplap wainscoting with a natural oil finish is a mid-range premium option popular in farmhouse and transitional interiors. See the full{" "}
-                  <Link href="/shiplap-cost" className="text-amber-700 hover:underline">shiplap cost guide</Link>{" "}
-                  for detailed material and labor breakdowns.",
-              },
-            ].map(({ title, subtitle, text }) => (
-              <div key={title} className="rounded-lg border border-gray-200 p-5">
-                <h3 className="text-lg font-semibold text-gray-900 mb-1">{title}</h3>
-                <p className="text-sm font-medium text-amber-700 mb-2">{subtitle}</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
-              </div>
-            ))}
+            <div className="rounded-lg border border-gray-200 p-5">
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">Beadboard wainscoting</h3>
+              <p className="text-sm font-medium text-amber-700 mb-2">$6 to $15 per square foot installed</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Beadboard uses narrow tongue-and-groove boards or MDF panels with a series of vertical ridges (the beads) separated by grooves. It is the most casual and least expensive wainscoting style. MDF beadboard panels are the fastest and cheapest option: a 4x8 sheet covers 32 square feet of wall and is installed with construction adhesive and finish nails. Solid pine or poplar tongue-and-groove beadboard is installed board by board and produces a higher-quality result. Both styles are typically painted. Beadboard is most common in bathrooms, kitchens, mudrooms, and cottage-style interiors.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-5">
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">Board and batten wainscoting</h3>
+              <p className="text-sm font-medium text-amber-700 mb-2">$8 to $32 per square foot installed</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Board and batten uses wide vertical boards (the boards) with narrow strips (the battens) covering the joints. In modern wainscoting applications, the boards are typically flush MDF or solid wood panels and the battens are surface-applied decorative strips that create a grid or ladder pattern. The wide board spacing and bold battens give a clean, contemporary look that has become one of the most requested wainscoting styles. Paint-grade board and batten in MDF or pine is the most affordable version. White oak or ash board and batten with an oil finish is a premium version that commands $22 to $36 per square foot installed. See the{" "}
+                <Link href="/shiplap-cost" className="text-amber-700 hover:underline">shiplap cost guide</Link>{" "}
+                for a related wall treatment project comparison.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-5">
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">Raised panel wainscoting</h3>
+              <p className="text-sm font-medium text-amber-700 mb-2">$28 to $55 per square foot installed</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Raised panel wainscoting is the most traditional and formal style. It consists of a framework of horizontal rails and vertical stiles with solid wood panels fitted inside each opening. The panels are either flat (recessed panel) or raised (the panel surface is elevated above the frame). Raised panels require a panel raising bit or a moulder to produce the distinctive profile. Raised panel wainscoting is labor-intensive: each panel must be individually fitted, the joints must be precise, and the entire assembly must be installed plumb and level. It is most appropriate for formal dining rooms, entryways, and studies in traditional homes.
+              </p>
+            </div>
+            <div className="rounded-lg border border-gray-200 p-5">
+              <h3 className="text-lg font-semibold text-gray-900 mb-1">Shiplap wainscoting</h3>
+              <p className="text-sm font-medium text-amber-700 mb-2">$10 to $25 per square foot installed</p>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Shiplap wainscoting uses the same overlapping rabbet-joint boards as full-wall shiplap but only covers the lower portion of the wall, typically 32 to 48 inches high, finished with a cap rail at the top. It combines the casual texture of shiplap with the defined architectural line of wainscoting. Painted pine shiplap wainscoting is the most affordable version. White oak shiplap wainscoting with a natural oil finish is a mid-range premium option popular in farmhouse and transitional interiors. See the full{" "}
+                <Link href="/shiplap-cost" className="text-amber-700 hover:underline">shiplap cost guide</Link>{" "}
+                for detailed material and labor breakdowns.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -440,9 +440,7 @@ export default function WainscotingCost() {
               {
                 title: "Wood species and material",
                 impact: "High",
-                text: "Material choice is the second-largest cost variable. MDF is the most affordable substrate for painted wainscoting at $0.75 to $1.50 per square foot. Pine and poplar are the standard paint-grade solid wood options at $1.50 to $3.00 per square foot. White oak, ash, and maple for natural-finish wainscoting run $6 to $12 per square foot of board material. Cherry and walnut for premium work run $8 to $18 per square foot. For a 170-square-foot room, the lumber cost ranges from $130 in MDF to $2,000 or more in white oak. See{" "}
-                  <Link href="/wood-prices" className="text-amber-700 hover:underline">current hardwood prices per board foot</Link>{" "}
-                  for the latest market pricing.",
+                text: "Material choice is the second-largest cost variable. MDF is the most affordable substrate for painted wainscoting at $0.75 to $1.50 per square foot. Pine and poplar are the standard paint-grade solid wood options at $1.50 to $3.00 per square foot. White oak, ash, and maple for natural-finish wainscoting run $6 to $12 per square foot of board material. Cherry and walnut for premium work run $8 to $18 per square foot. For a 170-square-foot room, the lumber cost ranges from $130 in MDF to $2,000 or more in white oak. See the wood prices page for current hardwood pricing per board foot.",
               },
               {
                 title: "Room complexity and corners",
