@@ -1504,3 +1504,71 @@ BUILD: TypeScript passes clean (tsc --noEmit exit 0)
 DEPLOY: state: success
 
 [2026-03-30 Run #2 finished]
+Deployment confirmed **success**. Here's what was done:
+
+**New page: `/custom-console-table-cost`**
+
+Targeted the **console table / sofa table / entryway table keyword cluster**, entirely uncovered by any existing page.
+
+**Keywords targeted:**
+- "console table cost" (high TP, KD 1-3)
+- "sofa table cost" (TP ~5,000+, KD 1-2)
+- "walnut console table" (high TP, KD 2-4)
+- "entryway table cost" (TP ~3,000+, KD 0-1)
+- "how much does a console table cost" (TP ~3,000+, KD 0)
+- "hallway table cost" / "custom console table cost"
+
+**Page content:**
+- Pricing table by type (painted maple $600 through live edge walnut $4,800)
+- 6-species comparison table (poplar, maple, ash, cherry, white oak, walnut) with per-board-foot and sale prices
+- 4 style cards: simple slab-top, slab with lower shelf, with drawers, live edge slab
+- 6 cost driver cards (species, length, drawers, lower shelf, leg/joinery design, finish type)
+- 5-step pricing guide with worked example (60-in white oak sofa table with lower shelf: **$3,679 sale price**)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/custom-dining-table-cost`, `/custom-coffee-table-cost`, `/walnut-slab-prices`, `/wood-prices`, `/best-wood-for-furniture`, `/pricing-guide`, `/calculator`
+- Sitemap updated at priority 0.8
+[2026-03-30 01:18:05] Run #2 finished
+[2026-03-30 01:18:05] Reached max loops (2). Stopping.
+[2026-03-31 01:03:03] ==========================================
+[2026-03-31 01:03:03] Agent: Seo Agent
+[2026-03-31 01:03:03] Model: sonnet
+[2026-03-31 01:03:03] Workspace: /Users/brandonhopkins/Projects/seo/customwoodquote/agents/seo-agent
+[2026-03-31 01:03:03] Stop on complete: false
+[2026-03-31 01:03:03] Max loops: 2 (0=infinite)
+[2026-03-31 01:03:03] ==========================================
+[2026-03-31 01:03:03] Run #1 starting (model: sonnet)
+
+[2026-03-31] New Content Page: /custom-bench-cost - customwoodquote.com (CraftQuote)
+
+OPPORTUNITY IDENTIFIED:
+- "dining bench cost" / "entryway bench cost" / "garden bench cost" / "wood bench cost" keyword cluster entirely uncovered by any existing page
+- Combined TP ~20,000+/mo at KD 0-2
+- Benches are among the most commonly ordered companion pieces to custom dining tables, a core audience product
+- Natural cluster extension from existing dining table, outdoor furniture, and bed frame pages
+
+TARGET KEYWORDS:
+- "dining bench cost" (TP ~8,000+, KD ~1)
+- "wood bench cost" (TP ~8,000+, KD ~2)
+- "entryway bench cost" (TP ~3,000+, KD ~0)
+- "garden bench cost" (TP ~5,000+, KD ~0)
+- "custom bench cost" (TP ~5,000+, KD ~1)
+- "outdoor bench cost" (TP ~5,000+, KD ~1)
+- "how much does a bench cost" (TP ~3,000+, KD ~0)
+
+CHANGES MADE:
+1. Created /src/app/custom-bench-cost/page.tsx with:
+   - Title: "Custom Wood Bench Cost: Dining Bench, Entryway Bench, and Garden Bench Pricing 2026"
+   - Full keyword-targeted metadata with canonical URL
+   - Pricing table (6 rows: painted pine $400 through walnut entryway storage bench $2,800)
+   - 6-species comparison table (pine, poplar, cedar, white oak, cherry, walnut)
+   - 4 bench style cards (dining bench backless, entryway bench with storage, garden bench with back, upholstered storage bench)
+   - 6 cost driver cards (species, back vs no back, storage compartment, bench length, leg design/joinery, finish type)
+   - 5-step pricing guide with full worked example (60-in white oak dining bench: $1,966 sale price)
+   - FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+   - Internal links to /custom-dining-table-cost, /outdoor-furniture-cost, /custom-bed-frame-cost, /wood-prices, /best-wood-for-furniture, /pricing-guide, /calculator
+2. Updated sitemap.ts to include /custom-bench-cost at priority 0.8
+
+BUILD: TypeScript passes clean (tsc --noEmit exit 0)
+DEPLOY: state: success
+
+[2026-03-31 Run #1 finished]
