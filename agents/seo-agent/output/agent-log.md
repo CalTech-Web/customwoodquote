@@ -1631,3 +1631,74 @@ CHANGES MADE:
 BUILD: TypeScript passes clean (tsc --noEmit exit 0)
 DEPLOY: state: success
 
+The output directory is gitignored. That's fine. Done.
+
+---
+
+Deployment confirmed **success**. Here's what was done:
+
+**New page: `/custom-dining-chair-cost`**
+
+Targeted the **custom dining chairs** keyword cluster, entirely uncovered by any existing page. Combined TP ~40,000-60,000/mo at KD 0-5. This is the natural companion to the site's highest-traffic pages (custom dining table, farmhouse table, bench).
+
+**Keywords targeted:**
+- "custom dining chairs" (TP ~10,000-15,000, KD 3-5)
+- "custom wood dining chairs" (TP ~8,000-12,000, KD 2-4)
+- "dining chair cost" / "dining room chair cost" (TP ~5,000-8,000 each)
+- "walnut dining chairs" (TP ~5,000-8,000, KD 2-4)
+- "how much do custom dining chairs cost" (TP ~3,000-5,000, KD 0-1)
+
+**Page content:**
+- Per-chair pricing table (painted pine $350 through walnut arm chair $2,200)
+- Full set pricing table (4 painted poplar chairs $1,200 through 4+2 walnut set $7,800)
+- 6-species comparison table with workability and structural suitability notes
+- 4 style cards: four-leg side chair, upholstered seat, arm chair, Windsor spindle-back
+- 6 cost driver cards (species, joinery method, back design, seat type, batch efficiency, finish)
+- 5-step pricing guide with worked example (white oak side chair, 10 hr: $1,857 single, ~$8,900 for set of 6)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/custom-dining-table-cost`, `/farmhouse-table-cost`, `/custom-bench-cost`, `/wood-prices`, `/pricing-guide`, `/calculator`
+- Sitemap updated at priority 0.8
+[2026-03-31 01:19:07] Run #2 finished
+[2026-03-31 01:19:07] Reached max loops (2). Stopping.
+[2026-04-01 00:03:01] ==========================================
+[2026-04-01 00:03:01] Agent: Seo Agent
+[2026-04-01 00:03:01] Model: sonnet
+[2026-04-01 00:03:01] Workspace: /Users/brandonhopkins/Projects/seo/customwoodquote/agents/seo-agent
+[2026-04-01 00:03:01] Stop on complete: false
+[2026-04-01 00:03:01] Max loops: 2 (0=infinite)
+[2026-04-01 00:03:01] ==========================================
+[2026-04-01 00:03:01] Run #1 starting (model: sonnet)
+
+[2026-04-01] New Content Page: /custom-nightstand-cost - customwoodquote.com (CraftQuote)
+
+OPPORTUNITY IDENTIFIED:
+- "walnut nightstand" / "custom nightstand cost" / "bedside table cost" keyword cluster entirely uncovered by any existing page
+- Completes the bedroom furniture cluster: bed frame + dresser pages exist, nightstand was missing
+- "walnut nightstand" alone has 10,000+ TP at KD 2-4; floating nightstands are trending in interior design
+
+TARGET KEYWORDS:
+- "walnut nightstand" (TP 10,000+, KD 2-4)
+- "bedside table cost" (TP 5,000+, KD 1-3)
+- "custom bedside table" (TP 5,000+, KD 2-4)
+- "custom nightstand cost" (TP 3,000+, KD 0-2)
+- "white oak nightstand" (TP 3,000+, KD 1-3)
+- "floating nightstand cost" (TP 2,000+, KD 0-2)
+- "handmade nightstand" (TP 2,000+, KD 1-3)
+
+CHANGES MADE:
+1. Created /src/app/custom-nightstand-cost/page.tsx with:
+   - Title: "Custom Nightstand Cost: Walnut, White Oak, and Hardwood Pricing 2026"
+   - Full keyword-targeted metadata with canonical URL
+   - Pricing table (6 rows: pine open-shelf $450 through floating walnut wall-mounted $4,500)
+   - 6-species comparison table (pine, poplar, maple, cherry, white oak, walnut)
+   - 4 style cards (open-shelf with drawer, two-drawer on legs, floating wall-mounted, cabinet-style with door)
+   - 6 cost driver cards (species, floating vs floor-standing, drawer count, leg design, matched pair, finish)
+   - 5-step pricing guide with full worked example (walnut two-drawer nightstand: $4,453 single, $6,012 matched pair)
+   - FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+   - Internal links to /custom-bed-frame-cost, /custom-dresser-cost, /wood-prices, /best-wood-for-furniture, /pricing-guide, /calculator
+2. Updated sitemap.ts to include /custom-nightstand-cost at priority 0.8
+
+BUILD: TypeScript passes clean (tsc --noEmit exit 0)
+DEPLOY: state: success
+
+[2026-04-01 Run #1 finished]
