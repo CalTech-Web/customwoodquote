@@ -1572,3 +1572,62 @@ BUILD: TypeScript passes clean (tsc --noEmit exit 0)
 DEPLOY: state: success
 
 [2026-03-31 Run #1 finished]
+Done. Deployment confirmed `success`.
+
+**New page: `/custom-bench-cost`**
+
+Targeted the **"dining bench cost" / "entryway bench cost" / "garden bench cost"** keyword cluster, entirely uncovered by any existing page. Combined TP ~20,000+/mo at KD 0-2.
+
+**Keywords targeted:**
+- "dining bench cost" (TP ~8,000+, KD ~1)
+- "wood bench cost" (TP ~8,000+, KD ~2)
+- "garden bench cost" (TP ~5,000+, KD ~0)
+- "outdoor bench cost" (TP ~5,000+, KD ~1)
+- "entryway bench cost" (TP ~3,000+, KD ~0)
+- "custom bench cost" (TP ~5,000+, KD ~1)
+
+**Page includes:**
+- Pricing table by bench type (painted pine $400 through walnut entryway storage bench $2,800)
+- 6-species comparison table (pine, poplar, cedar, white oak, cherry, walnut) with per-board-foot and sale prices
+- 4 bench style cards: backless dining bench, entryway bench with hinged storage, garden bench with back, upholstered storage bench
+- 6 cost driver cards (species, back vs no back, storage, bench length, leg design, finish type)
+- 5-step pricing guide with worked example (60-in white oak dining bench: $1,966 sale price)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/custom-dining-table-cost`, `/outdoor-furniture-cost`, `/custom-bed-frame-cost`, `/wood-prices`, `/pricing-guide`, `/calculator`
+- Sitemap updated at priority 0.8
+[2026-03-31 01:11:01] Run #1 finished
+[2026-03-31 01:11:06] Run #2 starting (model: sonnet)
+
+[2026-03-31] New Content Page: /custom-dining-chair-cost - customwoodquote.com (CraftQuote)
+
+OPPORTUNITY IDENTIFIED:
+- "custom dining chairs" / "dining chair cost" keyword cluster had combined TP ~40,000-60,000/mo at KD 0-5, entirely uncovered
+- Dining chairs are almost always ordered alongside custom dining tables, one of the highest-traffic pages on the site
+- Natural companion to /custom-dining-table-cost, /farmhouse-table-cost, and /custom-bench-cost pages
+
+TARGET KEYWORDS:
+- "custom dining chairs" (TP ~10,000-15,000, KD 3-5)
+- "custom wood dining chairs" (TP ~8,000-12,000, KD 2-4)
+- "dining chair cost" (TP ~5,000-8,000, KD 1-3)
+- "dining room chair cost" (TP ~5,000-8,000, KD 1-3)
+- "custom dining chair cost" (TP ~5,000-8,000, KD 0-2)
+- "walnut dining chairs" (TP ~5,000-8,000, KD 2-4)
+- "how much do custom dining chairs cost" (TP ~3,000-5,000, KD 0-1)
+
+CHANGES MADE:
+1. Created /src/app/custom-dining-chair-cost/page.tsx with:
+   - Title: "Custom Dining Chair Cost: Wood Dining Chair Pricing 2026"
+   - Full keyword-targeted metadata with canonical URL
+   - Per-chair pricing table (6 rows: painted pine $350 through walnut arm chair $2,200)
+   - Full dining chair set pricing table (6 configurations, 4 to 6 chairs)
+   - 6-species comparison table (pine, poplar, maple, cherry, white oak, walnut) with workability and structural notes
+   - 4 chair style cards (four-leg side chair, upholstered seat, arm chair, Windsor)
+   - 6 cost driver cards (species, joinery, back design, seat type, set batch efficiency, finish)
+   - 5-step pricing guide with full worked example (white oak side chair, 10 hr: $1,857 single, ~$8,900 for set of 6)
+   - FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+   - Internal links to /custom-dining-table-cost, /farmhouse-table-cost, /custom-bench-cost, /wood-prices, /best-wood-for-furniture, /pricing-guide, /calculator
+2. Updated sitemap.ts to include /custom-dining-chair-cost at priority 0.8
+
+BUILD: TypeScript passes clean (tsc --noEmit exit 0)
+DEPLOY: state: success
+
