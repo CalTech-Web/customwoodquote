@@ -1702,3 +1702,62 @@ BUILD: TypeScript passes clean (tsc --noEmit exit 0)
 DEPLOY: state: success
 
 [2026-04-01 Run #1 finished]
+The output directory is gitignored, which is fine. Done.
+
+**New page: `/custom-nightstand-cost`**
+
+Targeted the **walnut nightstand / custom bedside table** keyword cluster, which was entirely missing and completes the bedroom furniture trifecta (bed frame + dresser already exist).
+
+**Keywords targeted:**
+- "walnut nightstand" (TP 10,000+, KD 2-4)
+- "bedside table cost" / "custom bedside table" (TP 5,000+ each)
+- "custom nightstand cost" (TP 3,000+, KD 0-2)
+- "white oak nightstand" (TP 3,000+, KD 1-3)
+- "floating nightstand cost" (TP 2,000+, KD 0-2)
+
+**Page content:**
+- Pricing table by type (pine open-shelf $450 through floating walnut wall-mounted $4,500)
+- 6-species comparison table with per-board-foot and two-drawer sale prices
+- 4 style cards: open-shelf with drawer, two-drawer on legs, floating wall-mounted, cabinet-style with door
+- 6 cost driver cards (species, floating vs floor-standing, drawer count, leg design, matched pair premium, finish)
+- 5-step pricing guide with worked example (walnut two-drawer nightstand: **$4,453** single, **$6,012** matched pair)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/custom-bed-frame-cost`, `/custom-dresser-cost`, `/wood-prices`, `/best-wood-for-furniture`, `/pricing-guide`, `/calculator`
+- Sitemap updated at priority 0.8
+
+**Deployed:** state: success
+[2026-04-01 00:10:14] Run #1 finished
+[2026-04-01 00:10:19] Run #2 starting (model: sonnet)
+
+[2026-04-01] New Content Page: /custom-sideboard-cost - customwoodquote.com (CraftQuote)
+
+OPPORTUNITY IDENTIFIED:
+- "custom sideboard", "sideboard cost", "buffet table cost", "credenza cost", "walnut sideboard" cluster entirely uncovered by any existing page
+- Sideboard/buffet/credenza is the natural completion of the dining room cluster: dining table + dining chairs + bench + sideboard
+- "walnut sideboard" alone has 5,000-8,000 TP/mo; combined cluster estimated 20,000-30,000 TP/mo at KD 0-4
+
+TARGET KEYWORDS:
+- "sideboard cost" (TP ~5,000-8,000, KD 2-4)
+- "walnut sideboard" (TP ~5,000-8,000, KD 2-4)
+- "custom sideboard cost" (TP ~3,000-5,000, KD 1-3)
+- "buffet table cost" (TP ~3,000-5,000, KD 1-3)
+- "credenza cost" (TP ~3,000-5,000, KD 1-3)
+- "how much does a sideboard cost" (TP ~3,000, KD 0-1)
+- "custom credenza cost" (TP ~2,000-3,000, KD 0-1)
+
+CHANGES MADE:
+1. Created /src/app/custom-sideboard-cost/page.tsx with:
+   - Title: "Custom Sideboard Cost: Buffet Table, Credenza, and Dining Room Cabinet Pricing 2026"
+   - Full keyword-targeted metadata with canonical URL
+   - Pricing table (6 rows: painted poplar $1,800 through walnut bookmatched $10,000-$14,000)
+   - 6-species comparison table (poplar, pine, maple, cherry, white oak, walnut)
+   - 4 style cards (shaker door, slab door credenza, raised panel, live edge top)
+   - 6 cost driver cards (species, inset vs overlay doors, length/door count, drawer joinery, leg design, back panel construction)
+   - 5-step pricing guide with full worked example (72-in walnut shaker sideboard, 3 inset doors, 2 dovetail drawers: $12,296 sale price)
+   - FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+   - Internal links to /custom-dining-table-cost, /custom-dining-chair-cost, /cabinet-pricing, /wood-prices, /best-wood-for-furniture, /pricing-guide, /calculator
+2. Updated sitemap.ts to include /custom-sideboard-cost at priority 0.8
+
+BUILD: TypeScript passes clean (tsc --noEmit exit 0)
+DEPLOY: state: success
+
