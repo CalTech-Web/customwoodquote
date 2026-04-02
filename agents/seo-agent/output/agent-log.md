@@ -1761,3 +1761,142 @@ CHANGES MADE:
 BUILD: TypeScript passes clean (tsc --noEmit exit 0)
 DEPLOY: state: success
 
+The output directory is gitignored. Done.
+
+**New page: `/custom-sideboard-cost`**
+
+Targeted the **sideboard / buffet / credenza keyword cluster**, entirely uncovered by any existing page. This completes the dining room furniture cluster (dining table + dining chairs + bench + sideboard). Combined TP ~20,000-30,000/mo at KD 0-4.
+
+**Keywords targeted:**
+- "sideboard cost" (TP ~5,000-8,000, KD 2-4)
+- "walnut sideboard" (TP ~5,000-8,000, KD 2-4)
+- "custom sideboard cost" (TP ~3,000-5,000, KD 1-3)
+- "buffet table cost" / "credenza cost" (TP ~3,000-5,000 each)
+- "how much does a sideboard cost" (TP ~3,000, KD 0-1)
+
+**Page content:**
+- Pricing table (painted poplar $1,800 through walnut bookmatched 84-in sideboard $10,000-$14,000)
+- 6-species comparison table with per-board-foot and 72-in sideboard sale prices
+- 4 style cards: shaker door, slab door credenza, raised panel, live edge/bookmatched top
+- 6 cost driver cards (species, inset vs overlay doors, length/door count, drawer joinery, leg design, back panel)
+- 5-step pricing guide with full worked example (72-in walnut shaker sideboard, 3 inset doors, 2 dovetail drawers: **$12,296 sale price**)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/custom-dining-table-cost`, `/custom-dining-chair-cost`, `/cabinet-pricing`, `/wood-prices`, `/pricing-guide`, `/calculator`
+
+**Deployed:** Vercel state: success
+[2026-04-01 00:17:48] Run #2 finished
+[2026-04-01 00:17:48] Reached max loops (2). Stopping.
+[2026-04-02 00:03:05] ==========================================
+[2026-04-02 00:03:05] Agent: Seo Agent
+[2026-04-02 00:03:05] Model: sonnet
+[2026-04-02 00:03:05] Workspace: /Users/brandonhopkins/Projects/seo/customwoodquote/agents/seo-agent
+[2026-04-02 00:03:05] Stop on complete: false
+[2026-04-02 00:03:05] Max loops: 2 (0=infinite)
+[2026-04-02 00:03:05] ==========================================
+[2026-04-02 00:03:05] Run #1 starting (model: sonnet)
+
+[2026-04-02] New Content Page: /custom-tv-stand-cost - customwoodquote.com (CraftQuote)
+
+OPPORTUNITY IDENTIFIED:
+- "walnut TV stand" / "media console cost" / "custom TV stand" cluster entirely uncovered by any existing page
+- Distinct from /custom-entertainment-center-cost which covers large built-in TV wall units
+- "walnut tv stand" alone likely 5,000-10,000 TP/mo at KD 2-4; combined cluster estimated 15,000-25,000/mo
+- Natural living room cluster completion: coffee table, console table, entertainment center exist; standalone TV stand/media console was missing
+
+TARGET KEYWORDS:
+- "walnut tv stand" (TP 5,000-10,000, KD 2-4)
+- "media console cost" / "custom media console" (TP ~5,000+)
+- "tv stand cost" (TP ~5,000+, KD 1-3)
+- "custom tv stand cost" (TP ~3,000+, KD 0-2)
+- "white oak tv stand" / "custom tv cabinet cost" (TP ~2,000+)
+- "live edge tv stand" / "solid wood tv stand cost" (TP ~2,000+)
+
+CHANGES MADE:
+1. Created /src/app/custom-tv-stand-cost/page.tsx with:
+   - Title: "Custom TV Stand Cost: Walnut Media Console and TV Stand Pricing 2026"
+   - Full keyword-targeted metadata with canonical URL
+   - Pricing table (6 rows: painted poplar $800 through live edge walnut $5,500-$9,000)
+   - 5-species comparison table (poplar, maple, cherry, white oak, walnut)
+   - 4 style cards (open slab-top, two-door media console, with drawers, live edge walnut)
+   - 6 cost driver cards (species, width/length, door vs open config, drawer count, leg style, cable management)
+   - 5-step pricing guide with full worked example (60-in white oak, 2 slab doors, 2 drawers: $5,878 sale price)
+   - FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+   - Internal links to /custom-entertainment-center-cost, /custom-coffee-table-cost, /custom-console-table-cost, /walnut-slab-prices, /wood-prices, /best-wood-for-furniture, /pricing-guide, /calculator
+2. Updated sitemap.ts to include /custom-tv-stand-cost at priority 0.8
+
+BUILD: TypeScript passes clean (tsc --noEmit exit 0)
+DEPLOY: state: success
+
+✅ **Completed**
+- **New page /custom-tv-stand-cost**: Targets 15,000-25,000+ combined monthly TP across "walnut TV stand" / "media console cost" cluster at KD 0-4, entirely uncovered
+- **Distinct from entertainment center page**: TV stands and media consoles are standalone furniture pieces; entertainment centers are large built-in wall units
+- **FAQPage JSON-LD**: 6 questions targeting "how much does a custom TV stand cost", walnut pricing, TV stand vs entertainment center, best wood species, build time, how to price
+- **HowTo JSON-LD**: 5 steps for pricing a custom white oak media console
+- **Worked example**: 60-in white oak two-door media console with 2 dovetail drawers, push-to-open hardware, tapered legs: $5,878 sale price
+- **Sitemap updated**: /custom-tv-stand-cost at priority 0.8
+- **Deployed**: Vercel state: success
+[2026-04-02 Run #1 finished]
+The output directory is gitignored (same as previous runs). That's fine.
+
+**Done.** Deployment confirmed **success**.
+
+---
+
+**New page: `/custom-tv-stand-cost`**
+
+Targeted the **walnut TV stand / media console cost** keyword cluster, entirely uncovered by any existing page. This is distinct from `/custom-entertainment-center-cost` (built-in wall units) — TV stands and media consoles are standalone furniture pieces.
+
+**Keywords targeted:**
+- "walnut tv stand" (TP 5,000-10,000, KD 2-4)
+- "media console cost" / "custom media console" (TP ~5,000+)
+- "tv stand cost" (TP ~5,000+, KD 1-3)
+- "white oak tv stand" / "custom tv stand cost" (TP ~3,000+)
+- "live edge tv stand" / "solid wood tv stand cost" (TP ~2,000+ each)
+
+**Page content:**
+- Pricing table by type (painted poplar $800 through live edge walnut $5,500-$9,000)
+- 5-species comparison table with per-board-foot and 60-inch console sale prices
+- 4 style cards: open slab-top, two-door media console, with drawers, live edge walnut
+- 6 cost driver cards (species, width, door vs open config, drawer count, leg style, cable management)
+- 5-step pricing guide with worked example (60-in white oak, 2 slab doors, 2 drawers: **$5,878 sale price**)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/custom-entertainment-center-cost`, `/custom-coffee-table-cost`, `/walnut-slab-prices`, `/wood-prices`, `/pricing-guide`, `/calculator`
+- Sitemap updated at priority 0.8
+[2026-04-02 00:12:48] Run #1 finished
+[2026-04-02 00:12:53] Run #2 starting (model: sonnet)
+
+[2026-04-02] New Content Page: /custom-bar-stool-cost - customwoodquote.com (CraftQuote)
+
+OPPORTUNITY IDENTIFIED:
+- "walnut bar stool" / "custom bar stool cost" / "bar stool cost" keyword cluster entirely uncovered by any existing page
+- Natural cluster extension from existing /home-bar-cost and /custom-kitchen-island-cost pages
+- Bar stools are a high-demand companion product for both home bar and kitchen island clients
+- Combined TP estimated 15,000-25,000+/mo at KD 0-4
+
+TARGET KEYWORDS:
+- "bar stool cost" (TP ~10,000-15,000, KD 2-4)
+- "walnut bar stool" (TP ~8,000-12,000, KD 2-4)
+- "custom bar stool cost" (TP ~5,000+, KD 0-2)
+- "white oak bar stool" (TP ~3,000+, KD 1-3)
+- "wooden bar stool cost" (TP ~3,000+, KD 1-2)
+- "counter height stool cost" / "saddle seat bar stool" (TP ~2,000+ each)
+- "how much do bar stools cost" (TP ~5,000+, KD 1-3)
+
+CHANGES MADE:
+1. Created /src/app/custom-bar-stool-cost/page.tsx with:
+   - Title: "Custom Bar Stool Cost: Walnut, White Oak, and Hardwood Pricing 2026"
+   - Full keyword-targeted metadata with canonical URL
+   - Pricing table (6 rows: painted pine $250-$450 through walnut Windsor $1,400-$1,900)
+   - Counter vs bar height explainer section (24-26 in vs 28-30 in seat heights)
+   - 4 stool style cards (backless saddle, shaker-back, Windsor spindle-back, upholstered)
+   - 6-species comparison table (pine, poplar, maple, white oak, cherry, walnut)
+   - 6 cost driver cards (species, back design, seat type, set quantity, height, finish)
+   - 5-step pricing guide with worked example (set of 4 white oak shaker-back stools: $5,300 sale price)
+   - FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+   - Internal links to /home-bar-cost, /custom-kitchen-island-cost, /custom-dining-chair-cost, /wood-prices, /pricing-guide, /calculator
+2. Updated sitemap.ts to include /custom-bar-stool-cost at priority 0.8
+
+BUILD: TypeScript passes clean
+DEPLOY: state: success
+
+[2026-04-02 Run #2 finished]
