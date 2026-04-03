@@ -118,9 +118,55 @@ const TRUST_BADGES = [
   { label: "PDF + Share Link" },
 ];
 
+const softwareAppSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "CraftQuote",
+  applicationCategory: "BusinessApplication",
+  operatingSystem: "Web",
+  description:
+    "AI-assisted quoting software for custom woodworkers. Create professional quotes with AI photo analysis, accurate pricing, and board-foot calculations. Free with no account required.",
+  url: "https://customwoodquote.com",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+  featureList: [
+    "AI photo analysis for furniture type and complexity",
+    "50+ wood species pricing database",
+    "Board-foot calculator",
+    "Itemized PDF quote generation",
+    "Shareable quote links for customers",
+    "Labor and overhead estimation",
+  ],
+};
+
+const homeFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: HOME_FAQS.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
+      />
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-amber-50 to-white px-6 py-16 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
@@ -350,5 +396,6 @@ export default function Home() {
         }}
       />
     </div>
+    </>
   );
 }
