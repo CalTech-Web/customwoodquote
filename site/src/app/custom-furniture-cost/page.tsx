@@ -141,6 +141,7 @@ const costGuides = {
     { href: "/custom-dining-chair-cost", label: "Custom Dining Chair Cost", range: "$400 – $1,200 each" },
     { href: "/custom-bar-stool-cost", label: "Custom Bar Stool Cost", range: "$300 – $900 each" },
     { href: "/custom-bench-cost", label: "Custom Bench Cost", range: "$400 – $2,200" },
+    { href: "/rocking-chair-cost", label: "Custom Rocking Chair Cost", range: "$600 – $7,000+" },
   ],
   bedroom: [
     { href: "/custom-bed-frame-cost", label: "Custom Bed Frame Cost", range: "$1,200 – $5,500" },

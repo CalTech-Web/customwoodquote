@@ -1900,3 +1900,151 @@ BUILD: TypeScript passes clean
 DEPLOY: state: success
 
 [2026-04-02 Run #2 finished]
+Deployment is **success**.
+
+**New page: `/custom-bar-stool-cost`**
+
+Targeted the **walnut bar stool / custom bar stool cost** keyword cluster, entirely uncovered by any existing page. Natural companion to the existing `/home-bar-cost` and `/custom-kitchen-island-cost` pages. Combined TP estimated 15,000-25,000+/mo at KD 0-4.
+
+**Keywords targeted:**
+- "bar stool cost" (TP ~10,000-15,000, KD 2-4)
+- "walnut bar stool" (TP ~8,000-12,000, KD 2-4)
+- "custom bar stool cost" (TP ~5,000+, KD 0-2)
+- "white oak bar stool" (TP ~3,000+, KD 1-3)
+- "how much do bar stools cost" (TP ~5,000+, KD 1-3)
+- "saddle seat bar stool", "counter height stool cost"
+
+**Page content:**
+- Per-stool pricing table (painted pine $250 through walnut Windsor $1,400-$1,900)
+- Counter height vs bar height explainer (24-26 in vs 28-30 in seat heights)
+- 4 style cards: backless saddle, shaker-back, Windsor spindle-back, upholstered
+- 6-species comparison table (pine through walnut) with per-board-foot and single-stool sale prices
+- 6 cost driver cards (species, back design, seat carving, set quantity, height, finish)
+- 5-step pricing guide with full worked example (set of 4 white oak shaker-back bar stools: **$5,300 sale price**, $1,325 each)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/home-bar-cost`, `/custom-kitchen-island-cost`, `/custom-dining-chair-cost`, `/wood-prices`, `/pricing-guide`, `/calculator`
+- Sitemap updated at priority 0.8
+[2026-04-02 00:23:00] Run #2 finished
+[2026-04-02 00:23:00] Reached max loops (2). Stopping.
+[2026-04-03 00:03:00] ==========================================
+[2026-04-03 00:03:00] Agent: Seo Agent
+[2026-04-03 00:03:00] Model: sonnet
+[2026-04-03 00:03:00] Workspace: /Users/brandonhopkins/Projects/seo/customwoodquote/agents/seo-agent
+[2026-04-03 00:03:00] Stop on complete: false
+[2026-04-03 00:03:00] Max loops: 2 (0=infinite)
+[2026-04-03 00:03:00] ==========================================
+[2026-04-03 00:03:00] Run #1 starting (model: sonnet)
+
+[2026-04-03] New Content Page: /laundry-room-cabinets-cost - customwoodquote.com (CraftQuote)
+
+OPPORTUNITY IDENTIFIED:
+- "laundry room cabinets cost" keyword cluster had combined TP ~30,000-50,000+/mo at KD 1-3, entirely uncovered
+- Laundry room built-ins and cabinetry are a core millwork project for the CraftQuote woodworker audience
+- Natural cluster extension from existing cabinet-pricing, mudroom-built-ins-cost, and garage-cabinets-cost pages
+
+TARGET KEYWORDS:
+- "laundry room cabinets cost" (TP ~30,000-50,000+, KD 1-3)
+- "laundry room cabinet cost" / "custom laundry room cabinets" (TP ~20,000+, KD 1-2)
+- "laundry room built-ins cost" (TP ~10,000+, KD 0-1)
+- "laundry room folding counter cost" (TP ~5,000+, KD 0-1)
+- "how much do laundry room cabinets cost" (TP ~8,000+, KD 1)
+- "laundry room cabinet installation cost" (TP ~5,000+, KD 1)
+
+CHANGES MADE:
+1. Created /src/app/laundry-room-cabinets-cost/page.tsx with:
+   - Title: "Laundry Room Cabinets Cost: Custom Built-In Pricing 2026"
+   - Full keyword-targeted metadata with canonical URL
+   - Pricing table by configuration (upper shelving only through full white oak built-in, $1,200 to $22,000)
+   - Per-linear-foot reference table (upper, base, combined, utility tower) x 3 materials (MDF, maple, white oak)
+   - 4 configuration style cards (upper only, upper + folding counter, full upper + base, full with utility tower)
+   - 6-material comparison table (MDF, birch ply, poplar, paint-grade maple, white oak, walnut)
+   - 6 cost driver cards with High/Medium impact ratings
+   - 5-step pricing guide with full worked example (10 lf painted MDF upper + base + maple folding counter: $14,800 sale price)
+   - FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+   - Internal links to /cabinet-pricing, /mudroom-built-ins-cost, /garage-cabinets-cost, /butcher-block-countertop-cost, /built-in-bookshelves-cost, /pricing-guide
+2. Updated sitemap.ts to include /laundry-room-cabinets-cost at priority 0.8
+
+BUILD: TypeScript passes clean (tsc --noEmit exit 0)
+DEPLOY: state: success
+
+✅ **Completed**
+- **New page /laundry-room-cabinets-cost**: Targets 30,000-50,000+ combined monthly TP across laundry room cabinets keyword cluster at KD 1-3, entirely uncovered
+- **Per-linear-foot reference table**: Upper, base, combined, and utility tower pricing across 3 materials
+- **4 configuration cards**: Upper only, upper + folding counter, full upper + base, full with utility tower
+- **FAQPage JSON-LD**: 6 questions targeting "how much do laundry room cabinets cost", cost per linear foot, best material, folding counter cost, build time, how to price
+- **HowTo JSON-LD**: 5 steps for pricing a laundry room cabinet project
+- **Worked example**: 10 lf painted MDF upper + base, maple folding counter, utility tower: $14,800 sale price ($1,480/lf)
+- **Sitemap updated**: /laundry-room-cabinets-cost at priority 0.8
+- **Deployed**: GitHub integration state: success
+[2026-04-03 Run #1 finished]
+The output directory is gitignored — consistent with prior runs. Done.
+
+---
+
+**New page: `/laundry-room-cabinets-cost`**
+
+Targeted the **laundry room cabinets** keyword cluster, entirely uncovered by any existing page. Combined TP ~30,000-50,000+/mo at KD 1-3, a natural extension of the cabinet-pricing, mudroom-built-ins, and garage-cabinets content cluster.
+
+**Keywords targeted:**
+- "laundry room cabinets cost" (TP ~30,000-50,000+, KD 1-3)
+- "custom laundry room cabinets" / "laundry room cabinet cost" (TP ~20,000+)
+- "laundry room built-ins cost" (TP ~10,000+, KD 0-1)
+- "laundry room folding counter cost" (TP ~5,000+)
+- "how much do laundry room cabinets cost" (TP ~8,000+)
+
+**Page content:**
+- Pricing table by configuration ($1,200 upper shelving only through $22,000 full white oak built-in with utility towers)
+- Per-linear-foot reference by cabinet type x 3 materials (MDF, paint-grade maple, white oak)
+- 4 configuration cards: upper only, upper + folding counter, full upper + base, full with utility tower
+- 6-material comparison table with moisture ratings and tier badges
+- 6 cost driver cards (linear footage, upper vs. base, utility tower, material upgrade, drawer quality, installation complexity)
+- 5-step pricing guide with worked example (10 lf painted MDF upper + base + maple folding counter + utility tower: **$14,800 sale price**, $1,480/lf)
+- FAQPage JSON-LD (6 questions), HowTo JSON-LD (5 steps), BreadcrumbList schema
+- Internal links to `/cabinet-pricing`, `/mudroom-built-ins-cost`, `/garage-cabinets-cost`, `/butcher-block-countertop-cost`, `/built-in-bookshelves-cost`, `/pricing-guide`
+
+**Deployed:** GitHub integration state: success
+[2026-04-03 00:11:46] Run #1 finished
+[2026-04-03 00:11:51] Run #2 starting (model: sonnet)
+Deployment succeeded.
+
+**What was done:** Added two structured data schemas to the homepage (`/`):
+
+1. **`SoftwareApplication` schema** — tells Google that CraftQuote is a free web-based business tool with specific features (AI photo analysis, 50+ species database, PDF generation, shareable links). This can unlock rich results in search showing the tool as free software, potentially improving CTR.
+
+2. **`FAQPage` schema** — surfaces the existing homepage FAQs (e.g. "Is CraftQuote free?", "How does AI photo analysis work?") as Google FAQ rich snippets directly in search results. The homepage already had these FAQs rendered but without the structured data that tells Google they're Q&A pairs.
+
+The homepage is the highest-authority page on the site, so schema improvements here have the most potential to move rankings and click-through rates.
+[2026-04-03 00:17:21] Run #2 finished
+[2026-04-03 00:17:21] Reached max loops (2). Stopping.
+[2026-04-04 00:03:03] ==========================================
+[2026-04-04 00:03:03] Agent: Seo Agent
+[2026-04-04 00:03:03] Model: sonnet
+[2026-04-04 00:03:03] Workspace: /Users/brandonhopkins/Projects/seo/customwoodquote/agents/seo-agent
+[2026-04-04 00:03:03] Stop on complete: false
+[2026-04-04 00:03:03] Max loops: 2 (0=infinite)
+[2026-04-04 00:03:03] ==========================================
+[2026-04-04 00:03:03] Run #1 starting (model: sonnet)
+[2026-04-04 00:00:00] Run #1 starting (model: sonnet)
+Deployment confirmed success. Here's what was done:
+
+**New page: `/custom-furniture-cost`**
+
+Targeted the **broad "custom furniture cost" head term cluster**, entirely uncovered by any existing page:
+- "custom furniture cost" (high volume, broad intent)
+- "how much does custom furniture cost" (high intent, FAQ query)
+- "custom wood furniture cost"
+- "custom furniture pricing"
+- "custom furniture price list"
+- "custom made furniture cost"
+
+This page serves as a topical authority hub for the entire site, linking to all 40+ existing cost guide pages organized into 7 categories. With 40+ pages on specific furniture types, this hub creates a strong internal link structure and captures broad head-term traffic that no other page was targeting.
+
+**Page content:**
+- Cost-at-a-glance table: 15 furniture types with typical cost range and average build time
+- 6 cost driver cards (species, size, complexity, labor rate, finish, hardware) with High/Medium impact ratings
+- 30+ links to individual cost guides organized by category: Tables, Seating, Bedroom, Storage, Built-ins, Outdoor, Millwork
+- **FAQPage JSON-LD** (6 questions: "how much does custom furniture cost", "why is custom furniture expensive", "is custom furniture worth it", "most affordable wood species", "how long does it take", "how to get a quote")
+- **BreadcrumbList schema**
+- Internal links to /pricing-guide, /wood-prices, /walnut-slab-prices, /best-wood-for-furniture, /quote-template, /calculator
+- Sitemap added at priority 0.9 (above individual cost guides at 0.8)
+[2026-04-04 00:00:00] Run #1 finished
